@@ -1,0 +1,332 @@
+﻿<div class="container-fluid" data-ng-controller="reportsController as rCntrl" data-ng-init="rCntrl.onLoad()">
+    <br />
+    <h1 style="text-align: center" class="hero-heading-s">Reports</h1>
+    <div class="col-md-8 serviceDiv" style="float: none;margin: 0 auto;">
+        <div data-ng-show="showKids">
+            <br />
+            <div data-ng-hide="role=='parent'||warning">
+                <button class="btn btn-primary" style="float: right" data-ng-click="emailOptions=true;rCntrl.selectAllForEmail(true);">Email Options</button>
+                <br />
+                <br />
+                <br />
+            </div>
+            <div class="list-group">
+                <div class="list-group-item" data-ng-repeat="kid in kids">
+                    <div class="form-group">
+                        <div data-ng-class="{'col-xs-2':emailOptions}" data-ng-show="emailOptions">
+                            <button data-ng-click="kid.sendEmail = !kid.sendEmail"
+                                    data-ng-class="{'btn btn-default': !kid.sendEmail, 'btn btn-primary': kid.sendEmail}">
+                                {{ kid.sendEmail ? "YES" : "NO" }}
+                            </button>
+                        </div>
+                        <div data-ng-class="{'col-xs-10':emailOptions}">
+                            <a href="#" style="text-decoration:none;color:black" data-ng-click="rCntrl.pullKidReport(kid.KidId, kid.FName+' '+kid.LName)">
+                                <div>
+                                    <span class="roboto"><img data-ng-src="{{kid.Avatar}}" style="width:40px;height:40px" />&nbsp;&nbsp;&nbsp;{{ kid.FName }} {{ kid.LName }}</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <span data-ng-show="emailOptions"><br /></span>
+                </div>
+            </div>
+            <div data-ng-show="warning" class="alert alert-info alert-dismissable">
+                {{ warning }}
+            </div>
+            <div data-ng-show="success" class="alert alert-success alert-dismissable">
+                {{ success }}
+            </div>
+            <div data-ng-show="emailOptions">
+                <div data-ng-show="error" class="alert alert-danger">
+                    {{ error }}
+                </div>
+                <br />
+                <button class="btn btn-primary" style="float: right" data-ng-disabled="showSpinReport" data-ng-click="rCntrl.sendEmail()">
+                    Send Email
+                    <i class="fa fa-cog fa-spin ng-hide" data-ng-show="showSpinReport"></i>
+                </button>
+                <button class="btn btn-primary" style="float: left" data-ng-click="emailOptions=false;">Cancel</button>
+                <br />
+                <br />
+            </div>
+        </div>
+        <div data-ng-show="showKidLog" class="animate-shiny">
+            <button type="button" class="close" data-ng-click="showKidLog=false;showKids=true;"
+                    aria-hidden="true">
+                &times;
+            </button>
+            <h1 style="text-align: center" class="hero-heading-black-s">{{ heading }}</h1>
+            <br />
+            <div data-ng-show="subWarning&&role!='parent'" class="alert alert-info alert-dismissable">
+                {{ subWarning }}
+                <div data-ng-show="today==day&&noReport">
+                    <br />
+                    <button class="btn btn-primary" data-ng-click="rCntrl.createReport()">Create Report</button>
+                </div>
+            </div>
+            <table>
+                <tr>
+                    <td>
+                        <input class="form-control" type="text" data-pick-a-date="date" data-ng-model="day" placeholder="Select Day for Report" />
+                    </td>
+                    <td><button class="btn btn-primary" data-ng-click="rCntrl.go()">GO!</button></td>
+                </tr>
+            </table>
+            <br />
+            <div data-ng-show="!showSpin && !noReport && settings.CustomReport">
+                <custom-report-read-only data-ng-repeat="item in customReport.questions" content="item" custom-ques-options="item.options" custom-ques-values="item.values" custom-ques-answers="item.answers"></custom-report-read-only>
+            </div>
+            <div data-ng-hide="showSpin || noReport || settings.CustomReport">
+                <span class="heading-small-underLine">Foods:</span>
+                <ul class="list-group">
+                    <li ng-repeat="food in foods track by $index" class="list-group-item">
+                        <span class=".hero-heading-black-xs">Food</span>
+                        <br />
+                        <div class="input-group">
+                            <span class=".hero-heading-black-xs"><b>When Kid Ate:     </b></span>
+                            <span class=".hero-heading-black-xs">{{food.WhenKidAte}}</span>
+                        </div>
+                        <div class="input-group">
+                            <span class=".hero-heading-black-xs"><b>What Kid Ate:     </b></span>
+                            <span class=".hero-heading-black-xs">{{food.WhatKidAte}}</span>
+                        </div>
+                        <div class="input-group">
+                            <span class=".hero-heading-black-xs"><b>How Kid Ate:     </b></span>
+                            <span class=".hero-heading-black-xs">{{food.HowKidAte}}</span>
+                        </div>
+                        <div class="input-group">
+                            <span class=".hero-heading-black-xs"><b>Any Snacks:     </b></span>
+                            <span class=".hero-heading-black-xs">{{food.AnySnack}}</span>
+                        </div>
+                    </li>
+                </ul>
+                <span class="heading-small-underLine">Pottys:</span>
+                <ul class="list-group">
+                    <li ng-repeat="potty in pottys track by $index" class="list-group-item">
+                        <span class=".hero-heading-black-xs">Potty</span>
+                        <br />
+                        <div class="input-group">
+                            <span class=".hero-heading-black-xs"><b>Diaper Check Time:     </b></span>
+                            <span class=".hero-heading-black-xs">{{potty.DiaperCheckTime}}</span>
+                        </div>
+                        <div class="input-group">
+                            <span class=".hero-heading-black-xs"><b>Potty Time:     </b></span>
+                            <span class=".hero-heading-black-xs">{{potty.PottyTime}}</span>
+                        </div>
+                        <div class="input-group">
+                            <span class=".hero-heading-black-xs"><b>Diaper Potty Type:     </b></span>
+                            <span class=".hero-heading-black-xs">{{potty.DiaperPottyType}}</span>
+                        </div>
+                    </li>
+                </ul>
+                <span class="heading-small-underLine">Naps:</span>
+                <ul class="list-group">
+                    <li ng-repeat="nap in naps track by $index" class="list-group-item">
+                        <span class=".hero-heading-black-xs">Nap</span>
+                        <br />
+                        <div class="input-group">
+                            <span class=".hero-heading-black-xs"><b>Nap Time:     </b></span>
+                            <span class=".hero-heading-black-xs">{{nap.NapTime}}</span>
+                        </div>
+                    </li>
+                </ul>
+                <span class="heading-small-underLine">Activities:</span>
+                <ul class="list-group">
+                    <li ng-repeat="activity in activities track by $index" class="list-group-item">
+                        <span class=".hero-heading-black-xs">Activity</span>
+                        <br />
+                        <div class="input-group">
+                            <span class=".hero-heading-black-xs"><b>Mood:     </b></span>
+                            <span class=".hero-heading-black-xs">{{activity.Mood}}</span>
+                        </div>
+                        <div class="input-group">
+                            <span class=".hero-heading-black-xs"><b>Activity Time:     </b></span>
+                            <span class=".hero-heading-black-xs">{{activity.ActivityTime}}</span>
+                        </div>
+                        <div class="input-group">
+                            <span class=".hero-heading-black-xs"><b>Activities:     </b></span>
+                            <span class=".hero-heading-black-xs">{{activity.Activities}}</span>
+                        </div>
+                    </li>
+                </ul>
+                <span class="heading-small-underLine">Problems Concerns:</span>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <div class="input-group">
+                            <span class=".hero-heading-black-xs"><b>Problems Concerns:     </b></span>
+                            <span class=".hero-heading-black-xs">{{log.ProblemsConcerns}}</span>
+                        </div>
+                        <div class="input-group">
+                            <span class=".hero-heading-black-xs"><b>Supplies Needed:     </b></span>
+                            <span class=".hero-heading-black-xs">{{log.SuppliesNeeded}}</span>
+                        </div>
+                        <div class="input-group">
+                            <span class=".hero-heading-black-xs"><b>Comments:     </b></span>
+                            <span class=".hero-heading-black-xs">{{log.Comments}}</span>
+                        </div>
+                    </li>
+                </ul>
+                <br />
+                <button class="btn btn-primary" style="float: left" data-ng-click="showKidLog=false;showKids=true;">Cancel</button>
+                <br />
+            </div>
+            <span>
+                <i class="fa fa-circle-o-notch fa-spin" data-ng-show="showSpin" style="font-size: 24px"></i>
+            </span>
+            <br />
+            <br />
+        </div>
+        <div data-ng-show="showCreateKidLog && settings.CustomReport" class="animate-shiny">
+            <br />
+            <custom-report data-ng-repeat="item in customCreateReport.questions" custom-ques-index="item.CustomReportQuestionId" content="item" change-option="dayCare.changeRadioOption" custom-ques-options="item.options" custom-ques-values="item.values" custom-ques-answers="item.answers"></custom-report>
+            <div data-ng-show="error" class="alert alert-danger">
+                {{ error }}
+            </div>
+            <div data-ng-show="warningCustReport" class="alert alert-info alert-dismissable">
+                <button type="button" class="close" data-ng-click="warningCustReport=false"
+                        aria-hidden="true">
+                    &times;
+                </button>
+                {{ warningCustReport }}
+            </div>
+            <br />
+            <button class="btn btn-primary" style="float: right" data-ng-disabled="showSpinReport" data-ng-click="rCntrl.saveCustomReport()">
+                Save Report
+                <i class="fa fa-cog fa-spin ng-hide" data-ng-show="showCustomSpinReport"></i>
+            </button>
+            <button class="btn btn-primary" style="float: left" data-ng-click="showKidLog=true;showCreateKidLog=false;">Cancel</button>
+            <br />
+            <br />
+            <br />
+        </div>
+        <div data-ng-show="showCreateKidLog && !settings.CustomReport" class="animate-shiny">
+            <br />
+            <ul class="nav nav-pills">
+                <li data-ng-class="{active: tab == 'dvFood'}">
+                    <a data-ng-click='tab = "dvFood"'>
+                        <i class="fa fa-cutlery fa-3"></i>
+                    </a>
+                </li>
+                <li data-ng-class="{active: tab == 'dvPotty'}">
+                    <a data-ng-click='tab = "dvPotty"'>
+                        <i class="fa fa-odnoklassniki fa-3"></i>
+                    </a>
+                </li>
+                <li data-ng-class="{active: tab == 'dvNap'}">
+                    <a data-ng-click='tab = "dvNap"'>
+                        <i class="fa fa-bed fa-3"></i>
+                    </a>
+                </li>
+                <li data-ng-class="{active: tab == 'dvActivities'}">
+                    <a data-ng-click='tab = "dvActivities"'>
+                        <i class="fa fa-futbol-o fa-3"></i>
+                    </a>
+                </li>
+                <li data-ng-class="{active: tab == 'dvProblems'}">
+                    <a data-ng-click='tab = "dvProblems"'>
+                        <i class="fa fa-frown-o fa-3"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div data-ng-switch='tab'>
+                    <div data-ng-switch-when='dvFood'>
+                        <br />
+                        <span class=".hero-heading-black-xs">Food</span>
+                        <br />
+                        <br />
+                        <ul class="list-group">
+                            <li ng-repeat="food in foods track by $index" class="list-group-item">
+                                <input class="form-control" type="text" placeholder="What Kid Ate" maxlength="500" ng-model="food.WhatKidAte" />
+                                <input class="form-control" type="text" placeholder="How Kid Ate" maxlength="20" ng-model="food.HowKidAte" />
+                                <input class="form-control" type="text" placeholder="When Kid Ate" maxlength="20" ng-model="food.WhenKidAte" />
+                                <input class="form-control" type="text" placeholder="Any Snacks" maxlength="20" ng-model="food.AnySnack" />
+                            </li>
+                            <li class="list-group-item">
+                                <button data-ng-click="rCntrl.addFood()">add one more</button>
+                            </li>
+                        </ul>
+                        <br />
+                    </div>
+                    <div data-ng-switch-when='dvPotty'>
+                        <br />
+                        <span class=".hero-heading-black-xs">Pottys</span>
+                        <br />
+                        <br />
+                        <ul class="list-group">
+                            <li ng-repeat="potty in pottys track by $index" class="list-group-item">
+                                <input class="form-control" type="text" maxlength="20" data-ng-model="potty.DiaperCheckTime" placeholder="Diaper Check Time" />
+                                <input class="form-control" type="text" maxlength="20" data-ng-model="potty.PottyTime" placeholder="Potty Time" />
+                                <input class="form-control" placeholder="Diaper Potty Type" maxlength="200" data-ng-model="potty.DiaperPottyType" />
+                            </li>
+                            <li class="list-group-item">
+                                <button data-ng-click="rCntrl.addPotty()">add one more</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div data-ng-switch-when='dvNap'>
+                        <br />
+                        <span class=".hero-heading-black-xs">Naps</span>
+                        <br />
+                        <br />
+                        <ul class="list-group">
+                            <li ng-repeat="nap in naps track by $index" class="list-group-item">
+                                <input class="form-control" type="text" maxlength="20" data-ng-model="nap.NapTime" placeholder="Nap Time" />
+                            </li>
+                            <li class="list-group-item">
+                                <button data-ng-click="rCntrl.addNap()">add one more</button>
+                            </li>
+                        </ul>
+                        <br />
+                    </div>
+                    <div data-ng-switch-when='dvActivities'>
+                        <br />
+                        <span class=".hero-heading-black-xs">Activities</span>
+                        <br />
+                        <br />
+                        <ul class="list-group">
+                            <li ng-repeat="activity in activities track by $index" class="list-group-item">
+                                <input class="form-control" type="text" maxlength="300" data-ng-model="activity.Mood" placeholder="Mood" />
+                                <input class="form-control" type="text" maxlength="300" data-ng-model="activity.ActivityTime" placeholder="Activity Time" />
+                                <input class="form-control" type="text" maxlength="300" data-ng-model="activity.Activities" placeholder="Activities" />
+                            </li>
+                            <li class="list-group-item">
+                                <button data-ng-click="rCntrl.addActivity()">add one more</button>
+                            </li>
+                        </ul>
+                        <br />
+                    </div>
+                    <div data-ng-switch-when='dvProblems'>
+                        <br />
+                        <span class=".hero-heading-black-xs">Problems Concerns</span>
+                        <br />
+                        <br />
+                        <textarea name="body" class="form-control" rows="2" maxlength="3000" placeholder="Problems Concerns"
+                                  data-ng-model="kidLog.ProblemsConcerns"></textarea>
+                        <br />
+                        <textarea name="body" class="form-control" rows="2" maxlength="4000" placeholder="Supplies Needed"
+                                  data-ng-model="kidLog.SuppliesNeeded"></textarea>
+                        <br />
+                        <textarea name="body" class="form-control" rows="2" maxlength="3000" placeholder="Comments"
+                                  data-ng-model="kidLog.Comments"></textarea>
+                        <br />
+                    </div>
+                </div>
+            </div>
+            <div data-ng-show="error" class="alert alert-danger">
+                {{ error }}
+            </div>
+            <br />
+            <button class="btn btn-primary" style="float: right" data-ng-disabled="showSpinReport" data-ng-click="rCntrl.saveReport()">
+                Save Report
+                <i class="fa fa-cog fa-spin ng-hide" data-ng-show="showSpinReport"></i>
+            </button>
+            <button class="btn btn-primary" style="float: left" data-ng-click="showKidLog=true;showCreateKidLog=false;">Cancel</button>
+            <br />
+            <br />
+            <br />
+        </div>
+    </div>
+    <br />
+    <br />
+</div>

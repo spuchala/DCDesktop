@@ -1,0 +1,273 @@
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\bin\DayCareWebAPI.dll.config
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\bin\DayCareWebAPI.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\bin\DayCareWebAPI.pdb
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\bin\AttributeRouting.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\bin\AttributeRouting.Web.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\bin\AttributeRouting.Web.Http.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\bin\AttributeRouting.Web.Http.WebHost.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\bin\Microsoft.Owin.Cors.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\bin\Microsoft.Owin.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\bin\Microsoft.Owin.Security.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\bin\Newtonsoft.Json.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\bin\Owin.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\bin\System.Web.Cors.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\bin\System.Web.Http.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\bin\System.Web.Http.Owin.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\bin\WebActivator.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\bin\AttributeRouting.xml
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\bin\AttributeRouting.Web.xml
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\bin\AttributeRouting.Web.Http.xml
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\bin\AttributeRouting.Web.Http.WebHost.xml
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\bin\Microsoft.Owin.xml
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\bin\Microsoft.Owin.Cors.xml
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\bin\Microsoft.Owin.Security.xml
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\bin\System.Web.Http.xml
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\bin\System.Web.Http.Owin.xml
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\bin\WebActivator.pdb
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\bin\Newtonsoft.Json.xml
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\obj\Debug\DayCareWebAPI.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2\DayCareWebAPI\obj\Debug\DayCareWebAPI.pdb
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\DayCareWebAPI.dll.config
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\DayCareWebAPI.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\DayCareWebAPI.pdb
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AttributeRouting.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AttributeRouting.Web.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AttributeRouting.Web.Http.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AttributeRouting.Web.Http.WebHost.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.Cors.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.Security.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Newtonsoft.Json.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Owin.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Cors.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Http.Cors.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Http.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Http.Owin.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\WebActivator.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AttributeRouting.xml
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AttributeRouting.Web.xml
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AttributeRouting.Web.Http.xml
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AttributeRouting.Web.Http.WebHost.xml
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.xml
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.Cors.xml
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.Security.xml
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Http.xml
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Http.Cors.xml
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Http.Owin.xml
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\WebActivator.pdb
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Newtonsoft.Json.xml
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\obj\Debug\DayCareWebAPI.dll
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\obj\Debug\DayCareWebAPI.pdb
+C:\Users\spuchala\Desktop\shan\DayCareProject\Final2-With CORS\DayCareWebAPI\obj\Debug\DayCareWebAPI.csprojResolveAssemblyReference.cache
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\obj\Debug\DayCareWebAPI.dll
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\obj\Debug\DayCareWebAPI.pdb
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\DayCareWebAPI.dll.config
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\DayCareWebAPI.dll
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\DayCareWebAPI.pdb
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AttributeRouting.dll
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AttributeRouting.Web.dll
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AttributeRouting.Web.Http.dll
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AttributeRouting.Web.Http.WebHost.dll
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.Cors.dll
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.dll
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.Security.dll
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.Security.OAuth.dll
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Newtonsoft.Json.dll
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Owin.dll
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Net.Http.Formatting.dll
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Cors.dll
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Http.Cors.dll
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Http.dll
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Http.Owin.dll
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Http.WebHost.dll
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\WebActivator.dll
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AttributeRouting.xml
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AttributeRouting.Web.xml
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AttributeRouting.Web.Http.xml
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AttributeRouting.Web.Http.WebHost.xml
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.xml
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.Cors.xml
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.Security.xml
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.Security.OAuth.xml
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Net.Http.Formatting.xml
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Http.xml
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Http.Cors.xml
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Http.Owin.xml
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\WebActivator.pdb
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Newtonsoft.Json.xml
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Http.WebHost.xml
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Aspose.Words.dll
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Aspose.Words.xml
+D:\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\obj\Debug\DayCareWebAPI.csprojResolveAssemblyReference.cache
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\DayCareWebAPI.dll.config
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\DayCareWebAPI.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\DayCareWebAPI.pdb
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AlexaSkillsKit.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Aspose.Words.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AttributeRouting.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AttributeRouting.Web.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AttributeRouting.Web.Http.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AttributeRouting.Web.Http.WebHost.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\BouncyCastle.Crypto.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\ejml-0.23.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.AWT.WinForms.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.Beans.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.Charsets.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.Cldrdata.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.Corba.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.Core.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.Jdbc.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.Localedata.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.Management.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.Media.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.Misc.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.Naming.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.Nashorn.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.Remoting.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.Security.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.SwingAWT.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.Text.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.Tools.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.Util.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.XML.API.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.XML.Bind.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.XML.Crypto.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.XML.Parse.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.XML.Transform.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.XML.WebServices.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.XML.XPath.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.Runtime.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.Runtime.JNI.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.Cors.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.Security.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Newtonsoft.Json.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Owin.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\slf4j-api.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\stanford-parser.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Cors.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Http.Cors.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Http.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Http.Owin.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\WebActivator.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Aspose.Words.xml
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AttributeRouting.xml
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AttributeRouting.Web.xml
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AttributeRouting.Web.Http.xml
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AttributeRouting.Web.Http.WebHost.xml
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\BouncyCastle.Crypto.pdb
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.xml
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.Cors.xml
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.Security.xml
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Newtonsoft.Json.xml
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Http.xml
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Http.Cors.xml
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Http.Owin.xml
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\WebActivator.pdb
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\obj\Debug\DayCareWebAPI.dll
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\obj\Debug\DayCareWebAPI.pdb
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\obj\Debug\DayCareWebAPI.csprojResolveAssemblyReference.cache
+C:\Users\spuchala\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AlexaSkillsKit.pdb
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\DayCareWebAPI.dll.config
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\DayCareWebAPI.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\DayCareWebAPI.pdb
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AlexaSkillsKit.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Aspose.Words.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AttributeRouting.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AttributeRouting.Web.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AttributeRouting.Web.Http.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AttributeRouting.Web.Http.WebHost.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\BouncyCastle.Crypto.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\ejml-0.23.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.AWT.WinForms.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.Beans.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.Charsets.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.Cldrdata.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.Corba.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.Core.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.Jdbc.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.Localedata.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.Management.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.Media.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.Misc.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.Naming.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.Nashorn.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.Remoting.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.Security.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.SwingAWT.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.Text.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.Tools.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.Util.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.XML.API.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.XML.Bind.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.XML.Crypto.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.XML.Parse.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.XML.Transform.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.XML.WebServices.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.OpenJDK.XML.XPath.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.Runtime.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\IKVM.Runtime.JNI.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.Cors.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.Security.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Newtonsoft.Json.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Owin.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\slf4j-api.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\stanford-parser.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Cors.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Http.Cors.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Http.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Http.Owin.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\WebActivator.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AlexaSkillsKit.pdb
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Aspose.Words.xml
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AttributeRouting.xml
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AttributeRouting.Web.xml
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AttributeRouting.Web.Http.xml
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\AttributeRouting.Web.Http.WebHost.xml
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\BouncyCastle.Crypto.pdb
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.xml
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.Cors.xml
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.Security.xml
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\Newtonsoft.Json.xml
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Http.xml
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Http.Cors.xml
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Http.Owin.xml
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\WebActivator.pdb
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\obj\Debug\DayCareWebAPI.csprojResolveAssemblyReference.cache
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\obj\Debug\DayCareWebAPI.dll
+C:\Users\spuchala\Desktop\Desktop\shan\Projects\DayCareProject\Final2-With CORS\DayCareWebAPI\obj\Debug\DayCareWebAPI.pdb

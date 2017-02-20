@@ -1,0 +1,32 @@
+﻿<div class="container-fluid" data-ng-controller="notificationsController as not" data-ng-init="not.onLoad()">
+    <br />
+    <h1 style="text-align: center" class="hero-heading-s">Notifications</h1>
+    <div class="col-md-8 serviceDiv" style="float: none;margin: 0 auto;">
+        <br />
+        <div data-ng-show="warning" class="alert alert-info alert-dismissable">
+            {{ warning }}
+        </div>
+        <div data-ng-show="error" class="alert alert-danger">
+            {{ error }}
+        </div>
+        <div data-ng-show="success" class="alert alert-success alert-dismissable">
+            {{ success }}
+        </div>
+        <br />
+        <div class="panel panel-default">
+            <ul class="list-group list-group-flush" data-ng-repeat="noti in nots">
+                <li class="list-group-item">
+                    <span class="hero-heading-black-xs">{{noti.Message}}</span>
+                    <button type="button" class="close" data-ng-click="not.removeNotification(noti.Id)"
+                            aria-hidden="true">
+                        &times;
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <br />
+        <br />
+    </div>
+    <br />
+    <br />
+</div>

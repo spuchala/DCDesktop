@@ -1,0 +1,139 @@
+﻿<div data-ng-controller="homeController as home" style="text-align:center" data-ng-init="home.getData()">
+    <header class="jumbotron" id="foo" style="height:340px;">
+        <div class="container" data-ng-hide="bgImage.textOnBackGroundColor">
+            <p class="hidden-xs">
+                <br>
+            </p>
+            <p class="hidden-xs">
+                <br>
+            </p>
+            <h2 data-ng-class="{'hero-heading' : bgImage.color == 'white' , 'hero-heading-black' : bgImage.color == 'black'}">{{bgImage.title}}</h2>
+            <a class="btn btn-primary" data-ng-show="bgImage.knowMore" ng-href="{{bgImage.knowMore}}">{{bgImage.knowMoreText}}</a>
+            <a class="btn btn-primary" data-ng-show="bgImage.iPhone" target="_blank" href="https://itunes.apple.com/us/app/giggles-child-care/id1097089113?mt=8">Grab Yours Today</a>
+            <p class="hidden-xs">
+                <br>
+            </p>
+        </div>
+        <div class="container" style="text-align:center" data-ng-show="bgImage.textOnBackGroundColor">
+            <p class="hidden-xs">
+                <br>
+            </p>
+            <p class="hidden-xs">
+                <br>
+            </p>
+            <p class="hidden-xs">
+                <br>
+            </p>
+            <div class="row">
+                <div class="col-md-6" style="float: none;margin: 0 auto;">
+                    <div class="aboutDiv-Custom">
+                        <p class="hero-heading-white-xs" style="text-align: center">
+                            {{bgImage.title}}<br />
+                            <br />
+                            <a class="btn btn-primary" data-ng-show="bgImage.knowMore" ng-href="{{bgImage.knowMore}}">Know More</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <br />
+        <br />
+        <div class="row text-center center-block">
+            <p class="heading-small-pink">Why use Giggles!?</p>
+        </div>
+        <br />
+        <div class="row text-center center-block">
+            <div class="col-sm-6 col-md-4">
+                <i class="fa fa-globe fa-3x fa-fw"></i>
+                <h4>One stop destination</h4>
+                <p>Use Giggles! to fill in and track daily reports sheets for daily attendance, activities like naps, foods, pottys and other infant/kid activities.</p>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <i class="fa fa-clock-o fa-3x fa-fw"></i>
+                <h4>Saves you time</h4>
+                <p>With Giggles! you eliminate paper by tracking reports/sheets and analyzing them through graphs and charts so you concentrate on important things i.e.Kids</p>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <i class="fa fa-book fa-3x fa-fw"></i>
+                <h4>Report almost anything</h4>
+                <p>Report any kind of activity like attendance, naps, foods etc. We are working hard on gathering and will be coming up with new reports, charts on a constant basis.</p>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="section-dark">
+        <div class="container">
+            <div class="row text-center center-block">
+                <p class="heading-small-white">For Family Day Care</p>
+            </div>
+            <div class="row text-center center-block">
+                <div class="col-md-12 text-center">
+                    <p class="hero-heading-white-xs">
+                        Register your family day care with us one time. Add any number of kids to the day care. Manage their reports and daily sheets for all daily activities. Moniter the kids attendance. Search and analyze the reports for improvements.
+                    </p>
+                    <br />
+                    <a class="btn btn-primary" href="registerDayCare">Register as Day Care</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <br />
+        <br />
+        <div class="row text-center center-block">
+            <p class="heading-small-pink">For Parents</p>
+        </div>
+        <div class="row text-center center-block">
+            <div class="col-md-12 text-center">
+                <p class="hero-heading-black-xs">
+                    As a Parent, search for your email provided to the day care and create an account with us for one time. You will be able to access your kids daily reports, activities sheets and other information. Emails about the same will be send at the end of the day.
+                </p>
+                <br />
+                <a class="btn btn-default" href="registerParent">Register as Parent</a>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="aboutSectionWhite">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center" style="text-align:center">
+                    <span class="heading-small-pink">Desktop not enough?</span>
+                    <br />
+                    <br />
+                    <span class="hero-heading-black-xs">
+                        What better way to access GigglesWare on the run than using our Mobile Apps!
+                        <br />
+                        <span class="hero-heading-black-xs">
+                            Check Out out Android App and Apple iPhone App
+                        </span>
+                    </span>
+                    <br />
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <a target="_blank" href="https://play.google.com/store/apps/details?id=io.cordova.myappa8b78f&hl=en">
+                                    <br><img src="images/google-play-badge.png" alt="Android app on Google Play">
+                                </a>
+                            </div>
+                            <div class="col-sm-6">
+                                <a target="_blank" href="https://itunes.apple.com/us/app/giggles-child-care/id1097089113?mt=8">
+                                    <br><img src="images/appstore.png" alt="Download on App Store">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-controller="sliderController">
+                        <slider images="images" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div data-ng-include="'partials/footer.html'"></div>
+

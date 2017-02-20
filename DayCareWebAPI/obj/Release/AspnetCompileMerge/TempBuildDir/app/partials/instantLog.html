@@ -1,0 +1,67 @@
+﻿<div class="container-fluid" data-ng-controller="instantLogController as inst" data-ng-init="inst.onLoad()">
+    <br />
+    <h1 style="text-align: center" class="hero-heading-s">Instant Log for Kids</h1>
+    <div class="col-md-8 serviceDiv" style="float: none;margin: 0 auto;">
+        <br />
+        <div data-ng-show="warning" class="alert alert-info alert-dismissable">
+            {{ warning }}
+        </div>
+        <div data-ng-show="error" class="alert alert-danger">
+            {{ error }}
+        </div>
+        <div data-ng-show="success" class="alert alert-success alert-dismissable">
+            {{ success }}
+        </div>
+        <br />
+        <div class="panel panel-default" data-ng-hide="warning">
+            <div class="panel-heading">
+                <div class="input-group">
+                    <div class="dropdown" data-ng-class="{ open : dd1 }" data-ng-init="dd1 = false" data-ng-click="dd1 = !dd1">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            <span data-bind="label">{{selectedKidName}}</span>&nbsp;<span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li data-ng-repeat="kid in kids">
+                                <a href="#" data-ng-click="inst.showLogForKid(kid);dd1 = !dd1;">{{kid.FName}} {{ kid.LName }}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body" style="background-color:white;text-align:center">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <span>{{selectedKidName}}</span>
+                            </div>
+                            <div class="panel-footer" data-ng-hide="uRole=='parent'">
+                                <div class="input-group">
+                                    <input id="btn-input" type="text" data-ng-model="logMessage" class="form-control" placeholder="Type your instant message here..." />
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-primary" data-ng-click="inst.logInstantMessage()">
+                                            Log
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="panel-body" style="background-color:lightgray">
+                                <div class="input-group input-group-lg" data-ng-repeat="msg in messages">
+                                    <span class="input-group-addon">
+                                        <span data-ng-class="{'fa fa-cutlery fa-2': msg.Type == 'Food' , 'fa fa-bed fa-2': msg.Type == 'Nap', 'fa fa-odnoklassniki fa-2': msg.Type == 'Potty', 'fa fa-futbol-o fa-2': msg.Type == 'Activity','fa fa-smile-o fa-2': msg.Type == 'Mood','fa fa-ambulance fa-2': msg.Type == 'Sick','fa fa-comment fa-2': msg.Type == 'Misc'}"></span>
+                                    </span>
+                                    <span class="input-group-addon"><strong>{{msg.Time}}</strong></span>
+                                    <label data-ng-class="inst.getAlertClass(msg.Type)"><strong>{{msg.Value}}</strong></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <br />
+        </div>
+    </div>
+    <br />
+    <br />
+</div>

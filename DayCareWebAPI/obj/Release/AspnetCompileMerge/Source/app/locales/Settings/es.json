@@ -1,0 +1,14 @@
+﻿{
+  "Settings.Title": "Ajustes para el tratamiento de día",
+  "Settings.Help": "Seleccionar SI / NO botones siguiente y haga clic en Guardar para actualizar la configuración de",
+  "Settings.OwnTemplateQuestion": "Voy a crear mi propia plantilla para los menores Reportar y las actividades diarias.",
+  "Settings.OwnTemplateHelp": "Puede crear una nueva plantilla de la página Kids si se comprueba esto",
+  "Settings.Yes": "SÍ",
+  "Settings.No": "NO",
+  "Settings.GigTemplateQuestion": "Voy a utilizar GigglesWare proporcionado informe para los menores Reportar y las actividades diarias.",
+  "Settings.GigTemplateHelp": "Esta es seleccionado por defecto. Si desea una nueva plantilla, por favor, decir sí a la pregunta anterior",
+  "Settings.PromoteQues": "¿Desea que la promoción de su guardería?",
+  "Settings.PromoteQuesHelp": "Vamos a enumerar su guardería en nuestra página web",
+  "Settinngs.Save": "Salvar",
+  "Settings.DefaultLanguage": "Mi preferencia de idioma"
+}

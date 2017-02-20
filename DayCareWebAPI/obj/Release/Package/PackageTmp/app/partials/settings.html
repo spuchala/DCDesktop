@@ -1,0 +1,162 @@
+﻿<div class="container-fluid" data-ng-controller="settingsController as sCntrl" data-ng-init="sCntrl.onLoad()">
+    <br />
+    <h1 style="text-align: center" class="hero-heading-s">Settings for your day care</h1>
+    <div class="col-md-8 serviceDiv" style="float: none;margin: 0 auto;">
+        <br />
+        <div data-ng-show="warning" class="alert alert-info alert-dismissable">
+            {{ warning }}
+        </div>
+        <div data-ng-show="error" class="alert alert-danger">
+            <button type="button" class="close" data-ng-click="error=false"
+                    aria-hidden="true">
+                &times;
+            </button>
+            {{ error }}
+        </div>
+        <div data-ng-show="success" class="alert alert-success alert-dismissable">
+            <button type="button" class="close" data-ng-click="success=false"
+                    aria-hidden="true">
+                &times;
+            </button>
+            {{ success }}
+        </div>
+        <ul class="nav nav-pills">
+            <li data-ng-class="{active: tab == 'dvSettings',inActivePink: tab !='dvSettings'}">
+                <a class="robotoNoStyle" data-ng-click='tab = "dvSettings"'>
+                    SETTINGS
+                </a>
+            </li>
+            <li data-ng-class="{active: tab == 'dvAbout',inActivePink: tab !='dvAbout'}">
+                <a class="robotoNoStyle" data-ng-click='sCntrl.getAboutData();tab = "dvAbout"'>
+                    ABOUT
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div data-ng-switch='tab'>
+                <div data-ng-switch-when='dvSettings'>
+                    <br />
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Select YES/NO buttons below and Click Save to update settings</div>
+                        <table class="table table-striped">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        I will create my own template for Kids Daily Report and Activities.
+                                        <h6>(You can create a custom template from Kids page if this is checked)</h6>
+                                    </td>
+                                    <td>
+                                        <div class="btn-group btn-toggle">
+                                            <button data-ng-click="settings.CustomReport = !settings.CustomReport;settings.GigglesWareReport = !settings.GigglesWareReport"
+                                                    data-ng-class="{'btn btn-default': !settings.CustomReport, 'btn btn-primary': settings.CustomReport}">
+                                                {{settings.CustomReport ? "YES" : "NO"}}
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        I will use GigglesWare provided Report for Kids Daily Report and Activities.
+                                        <h6>(This is selected by default. If you want a custom template, please say yes to above question)</h6>
+                                    </td>
+                                    <td>
+                                        <div class="btn-group btn-toggle">
+                                            <button data-ng-click="settings.GigglesWareReport = !settings.GigglesWareReport;settings.CustomReport = !settings.CustomReport"
+                                                    data-ng-class="{'btn btn-default': !settings.GigglesWareReport, 'btn btn-primary': settings.GigglesWareReport}">
+                                                {{settings.GigglesWareReport ? "YES" : "NO"}}
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        My language preference
+                                    </td>
+                                    <td>
+                                        <div class="btn-group" role="group">
+                                            <button type="button" data-ng-click="settings.Language = 'en-us'"
+                                                    data-ng-class="{'btn btn-default': settings.Language != 'en-us', 'btn btn-primary': settings.Language == 'en-us'}">
+                                                English
+                                            </button>
+                                            <button type="button" data-ng-click="settings.Language = 'es'"
+                                                    data-ng-class="{'btn btn-default': settings.Language != 'es', 'btn btn-primary': settings.Language == 'es'}">
+                                                Español
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        When a kid is added to my daycare, email parent so they can register as parent with GigglesWare
+                                        <h6>(This is selected by default. Un select if you want no email to be sent)</h6>
+                                    </td>
+                                    <td>
+                                        <div class="btn-group btn-toggle">
+                                            <button data-ng-click="settings.EmailOnRegisterKid = !settings.EmailOnRegisterKid"
+                                                    data-ng-class="{'btn btn-default': !settings.EmailOnRegisterKid, 'btn btn-primary': settings.EmailOnRegisterKid}">
+                                                {{settings.EmailOnRegisterKid ? "YES" : "NO"}}
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div data-ng-switch-when='dvAbout'>
+                    <br />
+                    <div class="alert alert-info alert-dismissable">
+                        Give us some information about your child care and a tiny website is created so you can use it to promote your child care, share documents and schedules
+                    </div>
+                    <div class="form-group">
+                        <label><b>Your Public Facing Micro Website</b><br /></label><br />
+                        <a style="font-weight:500;color:#D02090;" target="_blank" data-ng-href="http://go.gigglesware.com/DayCares/{{settings.DayCareName}}"><strong>www.go.gigglesware.com/DayCares/{{settings.DayCareName}}</strong></a>
+                    </div>
+                    <div class="form-group">
+                        <label><b>Description for home page</b><br /><span style="font-weight:500">A description of your child care for the home page. You can include all the good stuff like who you are and what you care and others.</span></label>
+                        <div style="border-style:ridge" text-angular ng-model="about.DescriptionHome" name="home-editor" ta-text-editor-class="clearfix border-around" ta-html-editor-class="border-around"></div>
+                    </div>
+                    <div class="form-group">
+                        <label><b>About Us</b><br /><span style="font-weight:500">Information about your child care. Things like the vision, why the child care was started and others.</span></label>
+                        <div style="border-style:ridge" text-angular ng-model="about.DescriptionAboutUs" name="aboutus-editor" ta-text-editor-class="clearfix border-around" ta-html-editor-class="border-around"></div>
+                    </div>
+                    <div class="form-group">
+                        <label><b>Program Description</b><br /><span style="font-weight:500">A description of your child care's program. Things like activities, meal plans, naps and others can go here.</span></label>
+                        <div style="border-style:ridge" text-angular ng-model="about.DescriptionProgram" name="program-editor" ta-text-editor-class="clearfix border-around" ta-html-editor-class="border-around"></div>
+                    </div>
+                    <div class="form-group">
+                        <label><b>Photo Gallery</b><br /><span style="font-weight:500">A picture is worth a thousand words. Upload a max of 5 photos to give users a virtual tour.</span></label>
+                        <div>
+                            <div data-ng-show="snapError" class="alert alert-danger">
+                                <button type="button" class="close" data-ng-click="snapError=false"
+                                        aria-hidden="true">
+                                    &times;
+                                </button>
+                                {{ snapError }}
+                                <br />
+                            </div>
+                            <input id="file" onchange="angular.element(this).scope().fileUpload(this)" type="file" accept="image/gif,image/jpeg,image/JPG,image/JPEG,image/png,image/bmp,image/BMP">
+                            <i class="fa fa-circle-o-notch fa-spin fa-3" data-ng-show="showSpinUploading"></i>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 col-xs-6" data-ng-repeat="snap in about.Snaps">
+                                <a href="#" class="thumbnail"><img data-ng-src="{{snap.SnapUrl}}" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <br />
+        <button class="btn btn-primary" data-ng-disabled="showSpin" style="float: right"
+                data-ng-click="sCntrl.saveSettings()">
+            Save
+            <i class="fa fa-cog fa-spin ng-hide" data-ng-show="showSpin"></i>
+        </button>
+        <br />
+        <br />
+    </div>
+    <br />
+    <br />
+</div>

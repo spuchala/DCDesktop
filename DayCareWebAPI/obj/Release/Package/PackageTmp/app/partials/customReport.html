@@ -1,0 +1,72 @@
+﻿<div class="container-fluid">
+    <br />
+    <div class="col-md-12" data-ng-controller="customReportController" data-ng-init="onLoad()">
+        <h1 style="text-align: center" class="hero-heading-s">Custom Report for your day care</h1>
+        <div class="serviceDiv">
+            <br />
+            <div data-ng-show="warning" class="alert alert-info alert-dismissable">
+                {{ warning }}
+            </div>
+            <div data-ng-show="error" class="alert alert-danger">
+                {{ error }}
+            </div>
+            <div data-ng-show="success" class="alert alert-success alert-dismissable">
+                {{ success }}
+            </div>
+            <br />
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <span class="heading-small">
+                        Upload existing log/report (Only Word documents allowed)
+                    </span>
+                    <br />
+                    <br />
+                    <input id="file" onchange="angular.element(this).scope().fileUpload(this)" type="file" accept="application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+                    <i class="fa fa-circle-o-notch fa-spin fa-3" data-ng-show="showSpinUploading"></i>
+                    <br />
+                    <span class="heading-small">
+                        (OR)
+                    </span>
+                    <br />
+                    <br />
+                    <span class="heading-small">
+                        Start building one from scratch
+                    </span>
+                    <br />
+                    <br />
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary icon-save" data-ng-disabled="selectedQuestion=='Select One'" data-ng-click="addQuestion()">
+                                + Add
+                            </button>
+                        </span>
+                        <div class="dropdown" data-ng-class="{ open : dd1 }" data-ng-init="dd1 = false" data-ng-click="dd1 = !dd1">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                <span data-bind="label">{{selectedQuestion}}</span>&nbsp;<span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li data-ng-repeat="item in questionTypes">
+                                    <a href="#" data-ng-click="questionSelected(item);dd1 = !dd1;">{{item.type}}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body" style="background-color:white">
+                    <custom-question data-ng-repeat="item in questions track by item.trackId" content="item" custom-ques-index="$index" add-option="addOptionToQuestion(item)" remove-question="removeQuestion(item)" remove-option="removeOptionFromQuestion(item)" custom-ques-options="item.options" my-directive-var="item.values"></custom-question>
+                </div>
+            </div>
+            <br />
+            <br />
+            <button class="btn btn-primary" data-ng-disabled="showSpin" style="float: right"
+                    data-ng-click="saveCustomReport()">
+                Save
+                <i class="fa fa-cog fa-spin ng-hide" data-ng-show="showSpin"></i>
+            </button>
+            <br />
+            <br />
+        </div>
+    </div>
+    <br />
+    <br />
+</div>

@@ -1,0 +1,20 @@
+﻿{
+  "Class.Classes": "la clase",
+  "Class.AddClass": "Agregar clase",
+  "Class.ClassName": "Nombre de la clase(necesario)",
+  "Class.Cancel": "Cancelar",
+  "Class.AddingKid": "Adición Niño",
+  "Class.FirstName": "Nombre de pila(necesario)",
+  "Class.LastName": "Apellido(necesario)",
+  "Class.Sex": "el sexo(necesario)",
+  "Class.DOB": "fecha de nacimiento(necesario)",
+  "Class.Address": "Dirección(necesario)",
+  "Class.GuardianName": "Nombre del tutor(necesario)",
+  "Class.GuardianPhone": "Teléfono de la guarda(necesario)",
+  "Class.GuardianEmail": "Correo electrónico de su tutor(necesario)",
+  "Class.Allergies": "Las alergias",
+  "Class.AddButton": "Añadir",
+  "Class.Kids": "niños",
+  "Class.AddKid": "Añadir niño",
+  "Class.Close": "Cerca"
+}

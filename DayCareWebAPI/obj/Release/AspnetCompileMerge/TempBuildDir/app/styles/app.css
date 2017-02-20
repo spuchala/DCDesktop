@@ -1,0 +1,591 @@
+﻿.select {
+    height: 36px;
+    border-radius: 4px;
+    line-height: 28px;
+}
+
+.subService {
+    border-style: groove;
+}
+
+.back {
+    float: left;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 9px 0;
+}
+
+.continue {
+    float: right;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 9px 0;
+}
+
+.question-heading {
+    font-size: 18px;
+    line-height: 1.086538;
+    font-weight: 200;
+    font-family: "Avenir Next Demi Bold","Avenir Next","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.question {
+    font-size: 14px;
+    line-height: 1.086538;
+    font-weight: bold;
+    font-family: "Avenir Next Demi Bold","Avenir Next","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.form-login {
+    max-width: 330px;
+    padding: 0px 15px 5px 15px;
+    margin: 0 auto;
+}
+
+    .form-login .form-login-heading {
+        margin-bottom: 10px;
+    }
+
+    .form-login .form-control {
+        position: relative;
+        height: auto;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+        .form-login .form-control:focus {
+            z-index: 2;
+        }
+
+    .form-login input[type="password"] {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+.heading-small {
+    font-size: 1.75em;
+    line-height: 1.1;
+    font-family: "wf_SegoeUI","Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
+    line-height: 1.375em;
+}
+
+.heading-small-Pink {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "wf_SegoeUI","Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
+    font-weight: 200;
+    font-size: 30px;
+    color: #D02090;
+}
+
+.heading-small-white {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "wf_SegoeUI","Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
+    font-weight: 200;
+    font-size: 30px;
+    color: white;
+}
+
+.section-dark {
+    background-color: #555;
+    padding: 80px 0px;
+}
+
+.section-grey {
+    background-color: #A0A0A0;
+    padding: 0 0;
+}
+
+.heading-small-underLine {
+    font-size: 1.50em;
+    line-height: 1.1;
+    font-family: "wf_SegoeUI","Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
+    line-height: 1.375em;
+    text-decoration: underline;
+    -webkit-text-decoration-color: #D02090;
+    -moz-text-decoration-color: #D02090;
+    -ms-text-decoration-color: #D02090;
+    -o-text-decoration-color: #D02090;
+    text-decoration-color: #D02090;
+}
+
+.heading-xsmall {
+    font-size: 1.50em;
+    line-height: 1.1;
+    font-family: "wf_SegoeUI","Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
+    line-height: 1.375em;
+}
+
+.active {
+    background-color: #4d90fe;
+    color: #f2f2f2;
+}
+
+.bg-img {
+    background-image: url("../images/Hyd2.jpg");
+}
+
+.hero-heading {
+    font-size: 2.75em;
+    line-height: 1.1;
+    font-family: "wf_SegoeUI","Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
+    line-height: 1.375em;
+    color: white;
+}
+
+.hero-heading-black {
+    font-size: 2.75em;
+    line-height: 1.1;
+    font-family: "wf_SegoeUI","Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
+    line-height: 1.375em;
+    color: black;
+}
+
+.hero-heading-s {
+    font-size: 1.75em;
+    line-height: 1.1;
+    font-family: "wf_SegoeUI","Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
+    line-height: 1.375em;
+    color: black;
+}
+
+.hero-heading-black-xs {
+    font-size: 1.15em;
+    line-height: 1.1;
+    font-family: "wf_SegoeUI","Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
+    line-height: 1.375em;
+    color: black;
+}
+
+.hero-heading-black-xs-bold {
+    font-size: 1.15em;
+    line-height: 1.1;
+    font-family: "wf_SegoeUI","Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
+    line-height: 1.375em;
+    color: #d02090;
+}
+
+.hero-heading-black-xxs {
+    font-size: 1em;
+    font-family: "wf_SegoeUI","Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
+    color: #8e8e8e;
+}
+
+.hero-heading-black-s {
+    font-size: 1.25em;
+    line-height: 1.1;
+    font-family: "wf_SegoeUI","Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
+    line-height: 1.375em;
+    color: black;
+}
+
+.hero-heading-black-m {
+    font-size: 1.65em;
+    line-height: 1.1;
+    font-family: "wf_SegoeUI","Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
+    line-height: 1.375em;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.hero-heading-white-xs {
+    font-size: 1.25em;
+    line-height: 1.1;
+    font-family: "wf_SegoeUI","Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
+    line-height: 1.375em;
+    color: white;
+}
+
+/*.wrapper {
+    background-color: #3B5295;
+}*/
+
+.wrapper {
+    background-color: #EEEEEE;
+}
+
+.panel {
+    background-color: #ffffff;
+    background-color: lightgrey;
+}
+
+.serviceDiv {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+    padding: 4px 15px;
+    border-radius: 2px;
+    background-color: white;
+}
+
+div.clickable {
+    position: relative;
+    padding: 4px 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+    div.clickable:hover {
+        background-color: #A9C9FE;
+    }
+
+    div.clickable a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        text-decoration: none; /* Makes sure the link   doesn't get underlined */
+        z-index: 10; /* raises anchor tag above everything else in div */
+        background-color: white; /*workaround to make clickable in IE */
+        opacity: 0; /*workaround to make clickable in IE */
+        filter: alpha(opacity=1); /*workaround to make clickable in IE */
+    }
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.aboutSectionWhite {
+    background: white none repeat scroll 0 0;
+    padding: 4% 0;
+}
+
+.aboutDiv {
+    border: 0px solid;
+    padding: 4px 15px;
+    -ms-border-radius: 1px;
+    border-radius: 1px;
+    background-color: rgb(49, 58, 56);
+}
+
+.aboutDiv-Custom {
+    border: 0px solid;
+    padding: 4px 10px;
+    -ms-border-radius: 1px;
+    border-radius: 1px;
+    background-color: rgb(49, 58, 56);
+    opacity: 0.7;
+}
+
+.about_banner {
+    background: linear-gradient( rgba(39, 45, 44, 0.5), rgba(39, 45, 44, 0.5) ), url("../images/Merged.png");
+    height: 340px;
+    background-position: center top;
+    text-align: center;
+    align-content: center;
+}
+
+.aboutText {
+    font-size: 1.20em;
+    line-height: 1.5;
+    font-weight: bold;
+    font-family: "wf_SegoeUI","Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
+    color: white;
+}
+
+.section {
+    padding: 300px;
+}
+
+.animate-shiny.ng-hide-add, .animate-shiny.ng-hide-remove {
+    display: block !important;
+}
+
+.animate-shiny.ng-hide {
+    margin-left: -80px;
+    opacity: 0;
+}
+
+.animate-shiny.ng-show {
+    margin-left: -80px;
+    opacity: 0;
+}
+
+/* Animation for ng-show */
+.animate-shiny {
+    transition: 0.4s all ease-out;
+    margin-left: 0;
+    opacity: 1;
+}
+
+#loaderDiv {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1100;
+    background-color: white;
+    opacity: .6;
+}
+
+.ajax-loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -32px; /* -1 * image width / 2 */
+    margin-top: -32px; /* -1 * image height / 2 */
+    display: block;
+}
+
+.slide.ng-hide-add,
+.slide.ng-hide-remove {
+    -webkit-transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+    transition: all linear 0.5s;
+    display: block !important;
+}
+
+    .slide.ng-hide-add.ng-hide-add-active,
+    .slide.ng-hide-remove {
+        opacity: 0;
+    }
+
+        .slide.ng-hide-add,
+        .slide.ng-hide-remove.ng-hide-remove-active {
+            opacity: 1;
+        }
+
+.slider {
+    position: relative;
+    padding: 5px;
+    width: 610px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.sliderContainer {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.slide {
+}
+
+.arrows {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.stripe {
+    padding: 0 0 6vh;
+}
+
+.textwithoutBorder {
+    height: 17px;
+    border: 0;
+    margin-left: 1px;
+    box-shadow: -8px 10px 0px -7px #ebebeb, 8px 10px 0px -7px #ebebeb;
+    -webkit-transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s;
+}
+
+textwithoutBorder:focus {
+    outline: none;
+    box-shadow: -8px 10px 0px -7px #4EA6EA, 8px 10px 0px -7px #4EA6EA;
+}
+
+#foo {
+    background-image: url(../images/Merged.png);
+    opacity: 1;
+    transition: 1s all linear;
+    -webkit-transition: 1s all linear;
+}
+
+.value-up .ng-enter {
+    margin-top: -20px;
+    opacity: 0;
+}
+
+.value-up .ng-enter-active {
+    margin-top: 0;
+    opacity: 1;
+}
+
+.value-up .ng-leave {
+    margin-top: 0;
+    opacity: 1;
+}
+
+.value-up .ng-leave-active {
+    margin-top: 20px;
+    opacity: 0;
+}
+
+.value-down .ng-enter {
+    margin-top: 20px;
+    opacity: 0;
+}
+
+.value-down .ng-enter-active {
+    margin-top: 0;
+    opacity: 1;
+}
+
+.value-down .ng-leave {
+    margin-top: 0;
+    opacity: 1;
+}
+
+.value-down .ng-leave-active {
+    margin-top: -20px;
+    opacity: 0;
+}
+
+
+.animate-show.ng-hide-fade {
+    opacity: 0;
+    transition: 0s all linear;
+    -webkit-transition: 0s all linear;
+}
+
+.animate-show.ng-show {
+    opacity: 1;
+    transition: 1s all linear;
+    -webkit-transition: 1s all linear;
+}
+
+.previous-image {
+    position: absolute;
+    z-index: -1;
+}
+
+.image-container {
+    position: relative;
+}
+
+    .image-container img {
+        display: block;
+        position: absolute;
+    }
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+    .btn-file input[type=file] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: inherit;
+        display: block;
+    }
+
+[ng-cloak] {
+    display: none !important;
+}
+
+#noti_Container {
+    position: relative;
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+}
+
+.noti_bubble {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    padding: 1px 2px 1px 2px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 0.75em;
+    border-radius: 40px;
+}
+
+.roboto {
+    font-family: 'Roboto', 'RobotoDraft','Helvetica','Arial','sans-serif';
+    font-weight: 500;
+    font-size: 1.17em;
+    margin-right: 24px;
+    display: inline-block;
+    color: rgba(0,0,0,0.87);
+    text-overflow: ellipsis;
+    text-decoration: none;
+}
+
+.robotoNoStyle {
+    font-family: 'Roboto', 'RobotoDraft','Helvetica','Arial','sans-serif';
+    font-weight: 500;
+    font-size: 1.17em;
+    color: rgba(0,0,0,0.87);
+}
+
+.DocumentList {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 80px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.DocumentItem {
+    padding: 0;
+    height: 60px;
+}
+
+.list-inline {
+    white-space: nowrap;
+}
+
+.input-dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+    .input-dropdown input[type='text'] {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .input-dropdown ul {
+        background: #fff;
+        border: 1px solid #999;
+        box-sizing: border-box;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        width: 100%;
+        height: 140px;
+        line-height: 20px;
+        z-index: 1000;
+        overflow-y: auto;
+        overflow-x: hidden;
+        font-size =12px;
+    }
+
+        .input-dropdown ul > li {
+            cursor: pointer;
+            padding: 5;
+        }
+
+            .input-dropdown ul > li.active {
+                background: #608AEB;
+            }
+
+.inActivePink {
+    background-color: #f3b1db;
+}

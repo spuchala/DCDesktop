@@ -1,0 +1,116 @@
+﻿<div class="container-fluid" data-ng-controller="parentController as pCntrl" data-ng-init="pCntrl.onLoad()">
+    <br />
+    <h1 style="text-align: center" class="hero-heading-s">Kid Info</h1>
+    <div class="col-md-8 serviceDiv" style="float: none;margin: 0 auto;">
+        <div data-ng-hide="showKidLog">
+            <br />
+            Today's report for your Kids:
+            <br />
+            <br />
+            <ul class="list-group">
+                <li class="list-group-item" data-ng-repeat="kid in parent.Kids">
+                    <button class="btn btn-block btn-default btn-outline" data-ng-click="showDetails = ! showDetails">
+                        {{ kid.FName }}&nbsp;{{kid.LName}}
+                    </button>
+                    <div data-ng-show="showDetails" class="animate-shiny">
+                        <div class="serviceDiv">
+                            <span class="heading-small-underLine">Foods:</span>
+                            <ul class="list-group">
+                                <li ng-repeat="food in kid.Log.Foods track by $index" class="list-group-item">
+                                    <span class=".hero-heading-black-xs">Food</span>
+                                    <br />
+                                    <div class="input-group">
+                                        <span class=".hero-heading-black-xs"><b>When Kid Ate:     </b></span>
+                                        <span class=".hero-heading-black-xs">{{food.WhenKidAte}}</span>
+                                    </div>
+                                    <div class="input-group">
+                                        <span class=".hero-heading-black-xs"><b>What Kid Ate:     </b></span>
+                                        <span class=".hero-heading-black-xs">{{food.WhatKidAte}}</span>
+                                    </div>
+                                    <div class="input-group">
+                                        <span class=".hero-heading-black-xs"><b>How Kid Ate:     </b></span>
+                                        <span class=".hero-heading-black-xs">{{food.HowKidAte}}</span>
+                                    </div>
+                                    <div class="input-group">
+                                        <span class=".hero-heading-black-xs"><b>Any Snacks:     </b></span>
+                                        <span class=".hero-heading-black-xs">{{food.AnySnack}}</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <span class="heading-small-underLine">Pottys:</span>
+                            <ul class="list-group">
+                                <li ng-repeat="potty in kid.Log.Pottys track by $index" class="list-group-item">
+                                    <span class=".hero-heading-black-xs">Potty</span>
+                                    <br />
+                                    <div class="input-group">
+                                        <span class=".hero-heading-black-xs"><b>Diaper Check Time:     </b></span>
+                                        <span class=".hero-heading-black-xs">{{potty.DiaperCheckTime}}</span>
+                                    </div>
+                                    <div class="input-group">
+                                        <span class=".hero-heading-black-xs"><b>Potty Time:     </b></span>
+                                        <span class=".hero-heading-black-xs">{{potty.PottyTime}}</span>
+                                    </div>
+                                    <div class="input-group">
+                                        <span class=".hero-heading-black-xs"><b>Diaper Potty Type:     </b></span>
+                                        <span class=".hero-heading-black-xs">{{potty.DiaperPottyType}}</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <span class="heading-small-underLine">Naps:</span>
+                            <ul class="list-group">
+                                <li ng-repeat="nap in kid.Log.Naps track by $index" class="list-group-item">
+                                    <span class=".hero-heading-black-xs">Nap</span>
+                                    <br />
+                                    <div class="input-group">
+                                        <span class=".hero-heading-black-xs"><b>Nap Time:     </b></span>
+                                        <span class=".hero-heading-black-xs">{{nap.NapTime}}</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <span class="heading-small-underLine">Activities:</span>
+                            <ul class="list-group">
+                                <li ng-repeat="activity in kid.Log.Activities track by $index" class="list-group-item">
+                                    <span class=".hero-heading-black-xs">Activity</span>
+                                    <br />
+                                    <div class="input-group">
+                                        <span class=".hero-heading-black-xs"><b>Mood:     </b></span>
+                                        <span class=".hero-heading-black-xs">{{activity.Mood}}</span>
+                                    </div>
+                                    <div class="input-group">
+                                        <span class=".hero-heading-black-xs"><b>Activity Time:     </b></span>
+                                        <span class=".hero-heading-black-xs">{{activity.ActivityTime}}</span>
+                                    </div>
+                                    <div class="input-group">
+                                        <span class=".hero-heading-black-xs"><b>Activities:     </b></span>
+                                        <span class=".hero-heading-black-xs">{{activity.Activities}}</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <span class="heading-small-underLine">Problems Concerns:</span>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="input-group">
+                                        <span class=".hero-heading-black-xs"><b>Problems Concerns:     </b></span>
+                                        <span class=".hero-heading-black-xs">{{kid.ProblemsConcerns}}</span>
+                                    </div>
+                                    <div class="input-group">
+                                        <span class=".hero-heading-black-xs"><b>Supplies Needed:     </b></span>
+                                        <span class=".hero-heading-black-xs">{{kid.SuppliesNeeded}}</span>
+                                    </div>
+                                    <div class="input-group">
+                                        <span class=".hero-heading-black-xs"><b>Comments:     </b></span>
+                                        <span class=".hero-heading-black-xs">{{kid.Comments}}</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <br />
+            <br />
+        </div>
+    </div>
+    <br />
+    <br />
+</div>

@@ -1,0 +1,8 @@
+﻿{
+  "CustomReport.Title": "Informe personalizado para el tratamiento de día",
+  "CustomReport.UploadExistingReport": "Sube registro / informe existente (Sólo los documentos de Word permite)",
+  "CustomReport.Or": "O",
+  "CustomReport.StartFromScratch": "Empezar a construir uno desde cero",
+  "CustomReport.Add": "Añadir",
+  "CustomReport.Save": "Salvar"
+}

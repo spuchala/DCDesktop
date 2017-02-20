@@ -1,0 +1,15 @@
+http://was-spuchala2.corp.microstrategy.com/PO/Default.aspx?Page=http%3A//was-spuchala2.corp.microstrategy.com/PO/PO.ASpx%3FPOID%3D117059
+
+http://was-spuchala.corp.microstrategy.com/PO/Engg/PurchaseOrder/WebPO/Default.aspx?Page=http%3A//was-spuchala.corp.microstrategy.com/PO/Engg/PurchaseOrder/WebPO/PO.ASpx%3FPOID%3D116278
+
+https://corporate.test.microstrategy.com/PO/PO.aspx?POID=116968
+
+
+things to replace on prod
+
+searchpodal.cs
+myclosedQgridview.ascx
+approvalwizard.ascx.cs
+
+
+ui.Item.CalcTotal.toFixed(2)

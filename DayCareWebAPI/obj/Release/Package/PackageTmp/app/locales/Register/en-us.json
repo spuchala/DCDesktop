@@ -1,0 +1,14 @@
+﻿{
+  "Register.RegisterDayCareTitle": "To begin Register your Home Day Care with us",
+  "Register.RegisterFName": "F Name(required)",
+  "Register.RegisterLName": "L Name(required)",
+  "Register.Address": "Address(required)",
+  "Register.Phone": "Phone(required)",
+  "Register.Email": "Email(required)",
+  "Register.Password": "Password(required)",
+  "Register.Register": "Register",
+  "Register.RegisterParent": "To begin Enter the email provided to day care",
+  "Register.EmailProvidedToDayCare": "Email provided to day care(required)",
+  "Register.ParentPullEmail": "Pull Email",
+  "Register.RegisterFormParent": "To begin Register as a parent with us"
+}

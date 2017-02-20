@@ -1,0 +1,14 @@
+﻿{
+  "Register.RegisterDayCareTitle": "Para comenzar a registrar su casa Cuidado con nosotros",
+  "Register.RegisterFName": "Nombre de pila(necesario)",
+  "Register.RegisterLName": "Apellido(necesario)",
+  "Register.Address": "Dirección(necesario)",
+  "Register.Phone": "Teléfono(necesario)",
+  "Register.Email": "Email(necesario)",
+  "Register.Password": "Contraseña(necesario)",
+  "Register.Register": "Registro",
+  "Register.RegisterParent": "Para empezar Introduzca el correo electrónico proporcionado a la guardería",
+  "Register.EmailProvidedToDayCare": "Correo electrónico enviado a la guardería(necesario)",
+  "Register.ParentPullEmail": "Tire de correo electrónico",
+  "Register.RegisterFormParent": "Para comenzar Registro como un padre con nosotros"
+}

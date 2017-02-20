@@ -1,0 +1,14 @@
+﻿{
+  "Settings.Title": "Settings for your day care",
+  "Settings.Help": "Select YES/NO buttons below and Click Save to update settings",
+  "Settings.OwnTemplateQuestion": "I will create my own template for Kids Daily Report and Activities.",
+  "Settings.OwnTemplateHelp": "You can create a custom template from Kids page if this is checked",
+  "Settings.Yes": "YES",
+  "Settings.No": "NO",
+  "Settings.GigTemplateQuestion": "I will use GigglesWare provided Report for Kids Daily Report and Activities.",
+  "Settings.GigTemplateHelp": "This is selected by default. If you want a custom template, please say yes to above question",
+  "Settings.PromoteQues": "Do you want us to promote your daycare?",
+  "Settings.PromoteQuesHelp": "We will list your daycare on our website",
+  "Settinngs.Save": "Save",
+  "Settings.DefaultLanguage": "My language preference"
+}

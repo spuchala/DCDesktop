@@ -1,0 +1,16 @@
+﻿{
+  "Nav.Home": "HOME",
+  "Nav.Features": "FEATURES",
+  "Nav.About": "ABOUT",
+  "Nav.SignIn": "SIGN IN",
+  "Nav.SignUp": "SIGN UP",
+  "Nav.SelectLanguage": "Select your Language",
+  "Nav.Classes": "Classes",
+  "Nav.Kids": "Kids",
+  "Nav.Reports": "Reports",
+  "Nav.InstantLog": "Instant Log",
+  "Nav.Attendance": "Attendance",
+  "Nav.Settings": "Settings",
+  "Nav.Documents": "Documents",
+  "Nav.LogOut": "Log Out"
+}

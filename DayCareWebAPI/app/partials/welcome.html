@@ -1,0 +1,115 @@
+﻿<div class="container">
+    <div class="row">
+        <br />
+        <div class="col-md-4 col-md-offset-4" data-ng-controller="proController as pro" data-ng-init="pro.getCategories()">
+            <form name="proForm" novalidate="">
+                <div class="form-group">
+                    <div data-ng-show="!service && !subService && !business && !signUp">
+                        <h1 class="hero-heading-s">Tell us more of your business</h1>
+                        <select name="category" data-ng-model="prov.Service"
+                            class="select" data-ng-options="item.name for item in categories" required>
+                            <option selected="selected" class="" value="">Select a profession</option>
+                        </select>
+                        <br />
+                        <br />
+                        <button class="btn btn-primary" data-ng-disabled="!proForm.$valid"
+                            data-ng-click="service=true;pro.getSubServices()" style="width: 227px">
+                            Select Subservice</button>
+                    </div>
+                    <div data-ng-show="service">
+                        <h1 class="hero-heading-s">Tell us more of the services you provide.</h1>
+                        <div data-ng-repeat="cat in prov.Service.contents" class="checkbox">
+                            <label class="hero-heading-xs">
+                                <input type="checkbox" id="{{ cat.name }}" data-ng-model="cat.checked" />
+                                {{ cat.name }}
+                            </label>
+                        </div>
+                        <input class="form-control" type="text" placeholder="Other" data-ng-model="prov.OtherSubService" />
+                        <div data-ng-show="error" class="alert alert-danger">{{ error }}</div>
+                        <br />
+                        <button class="btn btn-primary" data-ng-click="pro.getAddress()"
+                            style="float: right">
+                            Continue →</button>
+                        <button class="btn btn-primary" style="float: left" data-ng-click="service=false;">← Back</button>
+                    </div>
+                    <div data-ng-show="subService" class="form-group">
+                        <h1 class="hero-heading-s">Address to bring you the right customers.</h1>
+                        <input name="location" class="form-control"
+                            placeholder="Street Address (required)" data-ng-model="prov.StreetAddress" />
+                        <br />
+                        <input type="text" class="form-control" disabled="disabled"
+                            placeholder="Hyderabad" data-ng-model="prov.City" />
+                        <!--<select data-ng-model="prov.City" class="form-control" data-ng-options="c.name for c in cities">
+                            <option selected="selected" class="" value="">Select City</option>
+                        </select>-->
+                        <br />
+                        <input name="pin code" class="form-control"
+                            placeholder="Pin Code (optional)" data-ng-model="prov.PinCode" />
+                        <div data-ng-show="error" class="alert alert-danger">{{ error }}</div>
+                        <br />
+                        <button class="btn btn-primary" data-ng-click="pro.getBusiness()"
+                            style="float: right">
+                            Continue →</button>
+                        <button class="btn btn-primary" style="float: left" data-ng-click="service=true;subService=false;">← Back</button>
+                    </div>
+                    <div data-ng-show="business" class="form-group">
+                        <h1 class="hero-heading-s">More about your business.</h1>
+                        <input name="businessName" class="form-control"
+                            placeholder="Business Name(required)" data-ng-model="prov.BusinessName" />
+                        <br />
+                        <input name="website" class="form-control"
+                            placeholder="Website/Facebook Profile (optional)" data-ng-model="prov.Website" />
+                        <br />
+                        <div class="input-group">
+                            <input name="travel" class="form-control" placeholder="I travel upto in kms (required)" data-ng-model="prov.Travel" />
+                            <span class="input-group-addon">Km</span>
+                        </div>
+                        <br />
+                        <div class="input-group">
+                            <input name="amount" class="form-control" placeholder="Average amount I charge(required)" data-ng-model="prov.Amount" />
+                            <span class="input-group-addon">Rs.</span>
+                        </div>
+                        <br />
+                        <textarea name="body" class="form-control" maxlength="2000" rows="10" placeholder="Enter Description"
+                            data-ng-model="prov.Description">
+                        </textarea>
+                        <div data-ng-show="error" class="alert alert-danger">{{ error }}</div>
+                        <br />
+                        <button class="btn btn-primary" data-ng-click="pro.getSignUp()"
+                            style="float: right">
+                            Continue →</button>
+                        <button class="btn btn-primary" style="float: left" data-ng-click="subService=true;business=false;">← Back</button>
+                    </div>
+                </div>
+            </form>
+            <form name="signUpForm" novalidate="" data-ng-show="signUp" class="form-group">
+                <h1 class="hero-heading-s">Sign Up Form Details.</h1>
+                <input class="form-control"
+                    placeholder="User Name(required)" data-ng-model="prov.UserName" required />
+                <br />
+                <input class="form-control" type="email"
+                    placeholder="Email(required)" data-ng-model="prov.Email" required />
+                <br />
+                <input class="form-control" type="tel"
+                    placeholder="Phone(required)" data-ng-model="prov.Phone" required />
+                <br />
+                <input class="form-control" type="password"
+                    placeholder="Password(required)" data-ng-model="prov.Password" required />
+                <div data-ng-show="error" class="alert alert-danger">
+                    {{ error }}<br />
+                    <button class="btn btn-lg btn-info btn-block" data-ng-show="extraRole"
+                        data-click-and-disable="pro.addExtraRole()">
+                        Register using same Info</button>
+                </div>
+                <div data-ng-show="success" class="alert alert-info">{{ success }}</div>
+                <br />
+                <button class="btn btn-primary" data-ng-show="!extraRole" data-ng-disabled="!signUpForm.$valid" style="float: right"
+                    data-ng-click="pro.signUp()">
+                    SingUp</button>
+                <button class="btn btn-primary" style="float: left" data-ng-click="signUp=false;business=true;">← Back</button>
+            </form>
+        </div>
+        <br />
+        <br />
+    </div>
+</div>

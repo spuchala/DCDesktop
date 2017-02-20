@@ -1,0 +1,54 @@
+﻿<div class="container">
+    <br />
+    <div class="col-md-4 col-md-offset-4" data-ng-controller="registerController as regParent" style="text-align: center" data-ng-init="regParent.setBodyCss()">
+        <div data-ng-show="error" class="alert alert-danger">
+            {{ error }}
+        </div>
+        <form data-ng-hide="success" name="findForm" novalidate="" class="form-group">
+            <h1 class="hero-heading-black">To begin Enter the email provided to day care</h1>
+            <input class="form-control"
+                   placeholder="Email provided to day care(required)" maxlength="200" data-ng-model="parent.Email" required />
+            <br />
+            <button class="btn btn-lg btn-info btn-block" data-ng-disabled="!findForm.$valid || showParentSpin" data-ng-click="regParent.checkParent()">
+                Pull Email <i class="fa fa-cog fa-spin ng-hide" data-ng-show="showParentSpin"></i>
+            </button>
+        </form>
+        <div data-ng-show="success">
+            <div class="alert alert-success alert-dismissable">
+                <button type="button" class="close" data-ng-click="success=false"
+                        aria-hidden="true">
+                    &times;
+                </button>
+                {{ success }}
+            </div>
+            <form name="signUpForm" novalidate="" class="form-group">
+                <h1 class="hero-heading">To begin Register as a parent with us</h1>
+                <div class="input-group">
+                    <input type="text" class="form-control" maxlength="50" data-ng-model="parent.FName" required placeholder="F Name(required)" />
+                    <span class="input-group-addon">-</span>
+                    <input type="text" class="form-control" maxlength="50" data-ng-model="parent.LName" required placeholder="L Name(required)" />
+                </div>
+                <br />
+                <input class="form-control" type="tel"
+                       placeholder="Phone(required)" maxlength="20" data-ng-model="parent.Phone" required />
+                <br />
+                <input class="form-control" type="email"
+                       placeholder="Email(required)" data-ng-model="parent.Email" required />
+                <br />
+                <input class="form-control" type="password"
+                       placeholder="Password(required)" maxlength="20" data-ng-model="parent.Password" required />
+                <div data-ng-show="error" class="alert alert-danger">
+                    {{ errorRegParent }}
+                </div>
+                <br />
+                <button class="btn btn-primary" data-ng-disabled="!signUpForm.$valid || showSpin" style="float: right"
+                        data-ng-click="regParent.registerParent()">
+                    Register
+                    <i class="fa fa-cog fa-spin ng-hide" data-ng-show="showSpin"></i>
+                </button>
+                <br />
+            </form>
+        </div>
+    </div>
+</div>
+

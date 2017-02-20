@@ -1,0 +1,13 @@
+﻿{
+  "Documents.Title": "Documentos",
+  "Documents.AddDoc": "Agregar documento",
+  "Documents.DocTitle": "Titulo del documento",
+  "Documents.Cancel": "Cancelar",
+  "Documents.UploadButton": "Subir",
+  "Documents.DeleteButton": "Borrar",
+  "Documents.ShareButton": "Compartir",
+  "Documents.EmailButton": "Email",
+  "Documents.DownloadButton": "Descargar",
+  "Documents.SendButton": "Enviar",
+  "Documents.CopyButton": "Dupdo"
+}

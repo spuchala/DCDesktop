@@ -1,0 +1,20 @@
+﻿{
+  "Class.Classes": "Classes",
+  "Class.AddClass": "Add Class",
+  "Class.ClassName": "Class Name(required)",
+  "Class.Cancel": "Cancel",
+  "Class.AddingKid": "Adding Kid",
+  "Class.FirstName": "F Name(required)",
+  "Class.LastName": "L Name(required)",
+  "Class.Sex": "Sex(required)",
+  "Class.DOB": "DOB(required)",
+  "Class.Address": "Address(required)",
+  "Class.GuardianName": "Guardian's Name(required)",
+  "Class.GuardianPhone": "Guardian's Phone(required)",
+  "Class.GuardianEmail": "Guardian's Email(required)",
+  "Class.Allergies": "Allergies",
+  "Class.AddButton": "Add",
+  "Class.Kids": "Kids",
+  "Class.AddKid": "Add Kid",
+  "Class.Close": "Close"
+}

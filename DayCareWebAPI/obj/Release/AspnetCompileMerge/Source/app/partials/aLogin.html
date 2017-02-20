@@ -1,0 +1,22 @@
+﻿<div class="container">
+    <div class="row">
+        <br />
+        <br />
+        <form name="loginForm" role="form" class="form-login" data-ng-controller="loginController as LoginCtrl" data-ng-init="LoginCtrl.setBodyCssForAlexa()" novalidate>
+            <p class="hero-heading-black" style="text-align: center">Login</p>                        
+            <input class="form-control" type="email" placeholder="Email" data-ng-model="user.Email" maxlength="200" required autofocus>
+            <input type="password" class="form-control" maxlength="20" placeholder="Password" data-ng-model="user.password" required>
+            <button class="btn btn-lg btn-info btn-block" data-ng-disabled="!loginForm.$valid || showSpin" data-ng-click="LoginCtrl.aLogin()">
+                Login<i class="fa fa-cog fa-spin ng-hide" data-ng-show="showSpin"></i>
+            </button>
+            <div data-ng-show="error" class="alert alert-danger">
+                {{ error }}
+            </div>
+            <div data-ng-show="success" class="alert alert-success">
+                {{ success }}
+            </div>
+        </form>
+        <br />
+        <br />
+    </div>
+</div>

@@ -1,0 +1,16 @@
+﻿{
+  "Nav.Home": "CASA",
+  "Nav.Features": "CARACTERISTICAS",
+  "Nav.About": "ACERCA DE",
+  "Nav.SignIn": "REGISTRARSE",
+  "Nav.SignUp": "REGÍSTRATE",
+  "Nav.SelectLanguage": "Elige tu idioma",
+  "Nav.Classes": "Clases",
+  "Nav.Kids": "niños",
+  "Nav.Reports": "Informes",
+  "Nav.InstantLog": "Acceder al instante",
+  "Nav.Attendance": "Asistencia",
+  "Nav.Settings": "ajustes",
+  "Nav.Documents": "Documentos",
+  "Nav.LogOut": "Cerrar sesión"
+}

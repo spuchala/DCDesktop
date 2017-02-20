@@ -1,0 +1,44 @@
+﻿<div class="container">
+    <br />
+    <div class="col-md-4 col-md-offset-4" data-ng-controller="registerController as reg" style="text-align: center" data-ng-init="reg.setBodyCss()">
+        <form name="signUpForm" novalidate="" class="form-group">
+            <h1 class="hero-heading-black">To begin Register your Home Day Care with us</h1>
+            <div class="serviceDiv">
+                <br />
+                <input class="form-control"
+                       placeholder="Home Day Care Name(required)" maxlength="200" data-ng-model="dayCare.DayCareName" required />
+                <br />
+                <div class="input-group">
+                    <input type="text" class="form-control" maxlength="50" data-ng-model="dayCare.FName" required placeholder="F Name(required)" />
+                    <span class="input-group-addon">-</span>
+                    <input type="text" class="form-control" maxlength="50" data-ng-model="dayCare.LName" required placeholder="L Name(required)" />
+                </div>
+                <br />
+                <input class="form-control"
+                       placeholder="Address(required)" maxlength="500" data-ng-model="dayCare.Address" required />
+                <br />
+                <input class="form-control" type="tel"
+                       placeholder="Phone(required)" maxlength="20" data-ng-model="dayCare.Phone" required />
+                <br />
+                <input class="form-control" type="email"
+                       placeholder="Email(required)" data-ng-model="dayCare.Email" required />
+                <br />
+                <input class="form-control" type="password"
+                       placeholder="Password(required)" maxlength="20" data-ng-model="dayCare.Password" required />
+                <div data-ng-show="error" class="alert alert-danger">
+                    {{ error }}
+                </div>
+                <br />
+                <button class="btn btn-primary" data-ng-disabled="!signUpForm.$valid || showSpin" style="float: right"
+                        data-ng-click="reg.registerDayCare()">
+                    Register
+                    <i class="fa fa-cog fa-spin ng-hide" data-ng-show="showSpin"></i>
+                </button>
+                <br />
+                <br />
+                <br />
+            </div>
+        </form>
+    </div>
+</div>
+

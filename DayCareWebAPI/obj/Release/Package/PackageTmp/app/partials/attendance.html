@@ -1,0 +1,49 @@
+﻿<div class="container-fluid" data-ng-controller="attendanceController as aCntrl" data-ng-init="aCntrl.onLoad()">
+    <br />
+    <h1 style="text-align: center" class="hero-heading-s">Kids Attendance for Today</h1>
+    <div class="col-md-8 serviceDiv" style="float: none;margin: 0 auto;">
+        <div data-ng-hide="showKidLog">
+            <br />
+            <div data-ng-show="warning" class="alert alert-info alert-dismissable">
+                {{ warning }}
+            </div>
+            <div data-ng-show="error" class="alert alert-danger">
+                {{ error }}
+            </div>
+            <div data-ng-show="success" class="alert alert-success alert-dismissable">
+                {{ success }}
+            </div>
+            <br />
+            <div class="panel panel-default" data-ng-hide="warning">
+                <div class="panel-heading">Click on YES/NO buttons below to update attendance</div>
+                <table class="table table-striped">
+                    <tbody data-ng-repeat="kid in kids">
+                        <tr>
+                            <td><span class="roboto"><img data-ng-src="{{kid.Avatar}}" style="width:40px;height:40px" />&nbsp;&nbsp;&nbsp;{{kid.KidName}}</span></td>
+                            <td>
+                                <div class="btn-group btn-toggle">
+                                    <button data-ng-click="kid.HasAttended = !kid.HasAttended"
+                                            data-ng-class="{'btn btn-default': !kid.HasAttended, 'btn btn-primary': kid.HasAttended}">
+                                        {{kid.HasAttended ? "YES" : "NO"}}
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br />
+            <div data-ng-hide="warning">
+                <button class="btn btn-primary" data-ng-disabled="showSpin" style="float: right"
+                        data-ng-click="aCntrl.logAttendance()">
+                    Save
+                    <i class="fa fa-cog fa-spin ng-hide" data-ng-show="showSpin"></i>
+                </button>
+                <br />
+                <br />
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+</div>

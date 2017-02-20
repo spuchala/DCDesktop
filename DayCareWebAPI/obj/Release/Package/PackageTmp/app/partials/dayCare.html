@@ -1,0 +1,341 @@
+﻿<div class="container-fluid" data-ng-controller="dayCareController as dayCare" data-ng-init="dayCare.onLoad()">
+    <br />
+    <h1 style="text-align: center" class="hero-heading-s">{{ heading }}</h1>
+    <div class="col-md-8 serviceDiv" style="float: none;margin: 0 auto;">
+        <div data-ng-hide="showKidLog">
+            <br />
+            <button data-ng-hide="editKid" class="btn btn-primary icon-save" style="float: left"
+                    data-ng-click="dayCare.addEditKidUI(true,'Adding Kid',-1);">
+                + Add Kid
+            </button>
+            <button data-ng-show="dayCareData.Settings.CustomReport && !customReportCreated" class="btn btn-primary icon-save" style="float: right"
+                    data-ng-click="dayCare.createCustomReport()">
+                + Create Custom Report
+            </button>
+            <br />
+            <br />
+            <div data-ng-hide="!hide" class="animate-shiny">
+                <div data-ng-show="errorInModal" class="alert alert-danger">
+                    {{ errorInModal }}
+                </div>
+                <form name="addForm" novalidate="" class="form-group">
+                    <div class="checkbox">
+                        <label><input type="checkbox" data-ng-click="shortKid=!shortKid">Short Version</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" class="form-control" maxlength="50" data-ng-model="kid.FName" required placeholder="F Name(required)" />
+                        <span class="input-group-addon">-</span>
+                        <input type="text" class="form-control" maxlength="50" data-ng-model="kid.LName" required placeholder="L Name(required)" />
+                    </div>
+                    <div data-ng-hide="shortKid">
+                        <br />
+                        <input class="form-control"
+                               placeholder="Sex(required)" maxlength="6" data-ng-model="kid.Sex" data-ng-required="!shortKid" />
+                        <br />
+                        <input class="form-control" type="text" data-pick-a-date="date" data-ng-model="kid.DOB" placeholder="DOB(required)" data-ng-required="!shortKid" />
+                        <br />
+                        <input class="form-control"
+                               placeholder="Address(required)" maxlength="500" data-ng-model="kid.Address" data-ng-required="!shortKid" />
+                        <br />
+                        <input class="form-control" type="text"
+                               placeholder="Guardian's Name(required)" maxlength="100" data-ng-model="kid.GuardianName" data-ng-required="!shortKid" />
+                        <br />
+                        <input class="form-control" type="tel"
+                               placeholder="Guardian's Phone(required)" maxlength="20" data-ng-model="kid.Phone" data-ng-required="!shortKid" />
+                        <br />
+                        <input class="form-control" type="email"
+                               placeholder="Guardian's Email(required)" maxlength="200" data-ng-model="kid.Email" data-ng-required="!shortKid" />
+                        <br />
+                        <div class="form-group">
+                            <label>Class:</label>
+                            <select class="dropdown" data-ng-show="selectedClass.ClassOption == 'existing'" data-ng-options="class.ClassName for class in classes track by class.ClassId" data-ng-model="selectedClass.ExistingClassName">
+                                <option value="" selected="selected">Select</option>
+                            </select>
+                            <input class="form-control" type="text" data-ng-show="selectedClass.ClassOption=='new'" maxlength="200" data-ng-model="selectedClass.NewClassName" />
+                            <button data-ng-class="{'btn btn-primary': selectedClass.ClassOption=='existing', 'btn btn-light': selectedClass.ClassOption!='existing'}" data-ng-click="selectedClass.ClassOption = 'existing'">
+                                Existing
+                            </button>
+                            <button data-ng-class="{'btn btn-primary': selectedClass.ClassOption=='new', 'btn btn-light': selectedClass.ClassOption!='new'}" data-ng-click="selectedClass.ClassOption = 'new'">
+                                New
+                            </button>
+                            <button data-ng-class="{'btn btn-primary': selectedClass.ClassOption=='none', 'btn btn-light': selectedClass.ClassOption!='none'}" data-ng-click="selectedClass.ClassOption = 'none'">
+                                None
+                            </button>
+                        </div>
+                        <div class="form-group">
+                            <label>Avatar:</label>
+                            <button class="btn btn-primary icon-save" data-ng-click="showAvatar=true;dayCare.getAvatar()">
+                                Select Avatar
+                            </button>
+                            <br /><br />
+                            <div class="DocumentList" data-ng-show="showAvatar">
+                                <ul class="list-inline">
+                                    <li class="DocumentItem" data-ng-repeat="avatar in avatars track by $index">
+                                        <a href="#" class="thumbnail" data-ng-click="kid.Avatar=avatar;">
+                                            <img data-ng-src="{{avatar}}" style="width:60px;height:60px" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <textarea name="body" class="form-control" rows="3" maxlength="3000" placeholder="Allergies"
+                                  data-ng-model="kid.Allergies" data-ng-required="!shortKid"></textarea>
+                    </div>
+                    <div data-ng-show="error" class="alert alert-danger">
+                        {{ error }}
+                    </div>
+                    <br />
+                    <button class="btn btn-primary" data-ng-hide="editKid" data-ng-disabled="!addForm.$valid || showSpin" style="float: right"
+                            data-ng-click="dayCare.addKid()">
+                        Add
+                        <i class="fa fa-cog fa-spin ng-hide" data-ng-show="showSpin"></i>
+                    </button>
+                    <button class="btn btn-primary" data-ng-show="editKid" data-ng-disabled="!addForm.$valid || showSpin" style="float: right"
+                            data-ng-click="dayCare.editKid()">
+                        Save
+                        <i class="fa fa-cog fa-spin ng-hide" data-ng-show="showSpin"></i>
+                    </button>
+                    <button class="btn btn-primary" style="float: left" data-ng-click="editKid=false;hide=false; heading = dayCareData.DayCareName">Cancel</button>
+                    <br />
+                    <br />
+                </form>
+            </div>
+            <div data-ng-show="success" class="alert alert-success alert-dismissable">
+                <button type="button" class="close" data-ng-click="success=false"
+                        aria-hidden="true">
+                    &times;
+                </button>
+                {{ success }}
+            </div>
+            <br />
+            <div data-ng-show="warning" class="alert alert-info alert-dismissable">
+                <button type="button" class="close" data-ng-click="warning=false"
+                        aria-hidden="true">
+                    &times;
+                </button>
+                {{ warning }}
+            </div>
+            <div class="list-group">
+                <div class="list-group-item" data-ng-repeat="kid in kids">
+                    <a href="#" style="text-decoration:none;color:black" data-ng-click="showDetails = ! showDetails">
+                        <div>
+                            <span class="roboto"><img data-ng-src="{{kid.Avatar}}" style="width:40px;height:40px" />&nbsp;&nbsp;&nbsp;{{ kid.FName }} {{ kid.LName }}</span>
+                        </div>
+                    </a>
+                    <div ng-show="showDetails" class="animate-shiny">
+                        <div style="text-align:center"><img data-ng-src="{{kid.Avatar}}" style="width:80px;height:80px" /></div><br />
+                        <table class="table table-striped table-bordered">
+                            <tr>
+                                <td>
+                                    <span class="fa fa-birthday-cake fa-1"> &nbsp;&nbsp;</span><span class="hero-heading-black-xxs">{{ kid.DOB }}</span>
+                                </td>
+                            <tr>
+                                <td>
+                                    <span class="fa fa-phone fa-1">&nbsp;&nbsp;</span><span class="hero-heading-black-xxs">{{ kid.Phone }}&nbsp;</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="fa fa-envelope fa-1">&nbsp;&nbsp;</span><span class="hero-heading-black-xxs">{{ kid.Email }}</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="fa fa-user-plus fa-1">&nbsp;&nbsp;</span><span class="hero-heading-black-xxs">{{ kid.GuardianName }}</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="fa fa-users fa-1">&nbsp;&nbsp;</span><span class="hero-heading-black-xxs">{{ kid.ClassName }}</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="fa fa-ambulance fa-1">&nbsp;&nbsp;</span><span class="hero-heading-black-xxs">{{ kid.Allergies }}</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="row">
+                                        <div class="col-md-6 text-left">
+                                            <button class="btn btn-primary .navbar-left" data-ng-click="showDetails = ! showDetails">
+                                                X
+                                            </button>
+                                            <button class="btn btn-primary .navbar-left" data-ng-click="dayCare.addEditKidUI(true,'Editing Kid',kid.KidId);">
+                                                Edit
+                                            </button>
+                                            <button class="btn btn-primary .navbar-left" data-ng-hide="delete" data-ng-click="delete='true'">
+                                                Delete
+                                            </button>
+                                            <button class="btn btn-primary .navbar-left" data-ng-disabled="showSpinPullReport" data-ng-click="dayCare.pullKidReport(kid.KidId, kid.FName+' '+kid.LName)">
+                                                Create/Edit Report
+                                                <i class="fa fa-cog fa-spin ng-hide" data-ng-show="showSpinPullReport"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-ng-show="delete">
+                                <td>
+                                    <input class="form-control" type="text" maxlength="100" data-ng-model="kid.DeleteReason" placeholder="Reason to delete kid" />
+                                    <br />
+                                    <button class="btn btn-primary" style="float: right" data-ng-click="dayCare.deleteKid(kid.KidId,kid.FName+' '+kid.LName,kid.DeleteReason)">
+                                        Delete
+                                    </button>
+                                    <button class="btn btn-primary" style="float: left" data-ng-click="delete=!delete">Cancel</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <br />
+        </div>
+        <div data-ng-show="showKidLog && dayCareData.Settings.CustomReport" class="animate-shiny">
+            <br />
+            <custom-report data-ng-repeat="item in customReport.questions" custom-ques-index="item.CustomReportQuestionId" content="item" change-option="dayCare.changeRadioOption" custom-ques-options="item.options" custom-ques-values="item.values" custom-ques-answers="item.answers"></custom-report>
+            <div data-ng-show="error" class="alert alert-danger">
+                {{ error }}
+            </div>
+            <br />
+            <button class="btn btn-primary" style="float: right" data-ng-disabled="showCustomSpinReport" data-ng-click="dayCare.saveCustomReport()">
+                Save Report
+                <i class="fa fa-cog fa-spin ng-hide" data-ng-show="showCustomSpinReport"></i>
+            </button>
+            <button class="btn btn-primary" style="float: left" data-ng-click="showKidLog=false; heading = dayCareData.DayCareName">Cancel</button>
+            <br />
+            <br />
+            <br />
+        </div>
+        <div data-ng-show="showKidLog && !dayCareData.Settings.CustomReport" class="animate-shiny">
+            <br />
+            <ul class="nav nav-pills">
+                <li data-ng-class="{active: tab == 'dvFood'}">
+                    <a data-ng-click='tab = "dvFood"'>
+                        <i class="fa fa-cutlery fa-3"></i>
+                    </a>
+                </li>
+                <li data-ng-class="{active: tab == 'dvPotty'}">
+                    <a data-ng-click='tab = "dvPotty"'>
+                        <i class="fa fa-odnoklassniki fa-3"></i>
+                    </a>
+                </li>
+                <li data-ng-class="{active: tab == 'dvNap'}">
+                    <a data-ng-click='tab = "dvNap"'>
+                        <i class="fa fa-bed fa-3"></i>
+                    </a>
+                </li>
+                <li data-ng-class="{active: tab == 'dvActivities'}">
+                    <a data-ng-click='tab = "dvActivities"'>
+                        <i class="fa fa-futbol-o fa-3"></i>
+                    </a>
+                </li>
+                <li data-ng-class="{active: tab == 'dvProblems'}">
+                    <a data-ng-click='tab = "dvProblems"'>
+                        <i class="fa fa-frown-o fa-3"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div data-ng-switch='tab'>
+                    <div data-ng-switch-when='dvFood'>
+                        <br />
+                        <span class=".hero-heading-black-xs">Food</span>
+                        <br />
+                        <br />
+                        <ul class="list-group">
+                            <li ng-repeat="food in foods track by $index" class="list-group-item">
+                                <input class="form-control" type="text" placeholder="What Kid Ate" maxlength="500" ng-model="food.WhatKidAte" />
+                                <input class="form-control" type="text" placeholder="How Kid Ate" maxlength="20" ng-model="food.HowKidAte" />
+                                <input class="form-control" type="text" placeholder="When Kid Ate" maxlength="20" ng-model="food.WhenKidAte" />
+                                <input class="form-control" type="text" placeholder="Any Snacks" maxlength="20" ng-model="food.AnySnack" />
+                            </li>
+                            <li class="list-group-item">
+                                <button data-ng-click="dayCare.addFood()">add one more</button>
+                            </li>
+                        </ul>
+                        <br />
+                    </div>
+                    <div data-ng-switch-when='dvPotty'>
+                        <br />
+                        <span class=".hero-heading-black-xs">Potty</span>
+                        <br />
+                        <br />
+                        <ul class="list-group">
+                            <li ng-repeat="potty in pottys track by $index" class="list-group-item">
+                                <input class="form-control" type="text" maxlength="20" data-ng-model="potty.DiaperCheckTime" placeholder="Diaper Check Time" />
+                                <input class="form-control" type="text" maxlength="20" data-ng-model="potty.PottyTime" placeholder="Potty Time" />
+                                <input class="form-control" placeholder="Diaper Potty Type" maxlength="200" data-ng-model="potty.DiaperPottyType" />
+                            </li>
+                            <li class="list-group-item">
+                                <button data-ng-click="dayCare.addPotty()">add one more</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div data-ng-switch-when='dvNap'>
+                        <br />
+                        <span class=".hero-heading-black-xs">Nap</span>
+                        <br />
+                        <br />
+                        <ul class="list-group">
+                            <li ng-repeat="nap in naps track by $index" class="list-group-item">
+                                <input class="form-control" type="text" maxlength="20" data-ng-model="nap.NapTime" placeholder="Nap Time" />
+                            </li>
+                            <li class="list-group-item">
+                                <button data-ng-click="dayCare.addNap()">add one more</button>
+                            </li>
+                        </ul>
+                        <br />
+                    </div>
+                    <div data-ng-switch-when='dvActivities'>
+                        <br />
+                        <span class=".hero-heading-black-xs">Activities</span>
+                        <br />
+                        <br />
+                        <ul class="list-group">
+                            <li ng-repeat="activity in activities track by $index" class="list-group-item">
+                                <input class="form-control" type="text" maxlength="300" data-ng-model="activity.Mood" placeholder="Mood" />
+                                <input class="form-control" type="text" maxlength="300" data-ng-model="activity.ActivityTime" placeholder="Activity Time" />
+                                <input class="form-control" type="text" maxlength="300" data-ng-model="activity.Activities" placeholder="DayCare.Activities" />
+                            </li>
+                            <li class="list-group-item">
+                                <button data-ng-click="dayCare.addActivity()">add one more</button>
+                            </li>
+                        </ul>
+                        <br />
+                    </div>
+                    <div data-ng-switch-when='dvProblems'>
+                        <br />
+                        <span class=".hero-heading-black-xs">Problems Concerns</span>
+                        <br />
+                        <br />
+                        <textarea name="body" class="form-control" rows="2" maxlength="3000" placeholder="Problems Concerns"
+                                  data-ng-model="kidLog.ProblemsConcerns"></textarea>
+                        <br />
+                        <textarea name="body" class="form-control" rows="2" maxlength="4000" placeholder="Supplies Needed"
+                                  data-ng-model="kidLog.SuppliesNeeded"></textarea>
+                        <br />
+                        <textarea name="body" class="form-control" rows="2" maxlength="3000" placeholder="Comments"
+                                  data-ng-model="kidLog.Comments"></textarea>
+                        <br />
+                    </div>
+                </div>
+            </div>
+            <div data-ng-show="error" class="alert alert-danger">
+                {{ error }}
+            </div>
+            <br />
+            <button class="btn btn-primary" style="float: right" data-ng-disabled="showSpinReport" data-ng-click="dayCare.saveReport()">
+                Save Report
+                <i class="fa fa-cog fa-spin ng-hide" data-ng-show="showSpinReport"></i>
+            </button>
+            <button class="btn btn-primary" style="float: left" data-ng-click="showKidLog=false; heading = dayCareData.DayCareName">Cancel</button>
+            <br />
+            <br />
+            <br />
+        </div>
+    </div>
+    <br />
+    <br />
+</div>
