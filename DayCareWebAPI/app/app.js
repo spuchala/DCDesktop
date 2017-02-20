@@ -161,7 +161,7 @@ app.config(function ($routeProvider, $locationProvider) {
     });
 });
 
-var apiBase = 'http://localhost:51653';
+var apiBase = 'http://localhost:51652';
 //var apiBase = 'http://api.gigglesware.com';
 //var apiBase = 'https://gigglesware.com';
 var codeVersion = '7.1';
