@@ -572,11 +572,14 @@ app.controller('aboutController', ['$scope',
         $scope.uploadTitle = '';
         $scope.docs = [];
         $scope.kids = {};
+        $scope.role = localStorageService.get('userRole');
 
         this.onLoad = function () {
             backgroundService.setCurrentBg("wrapper");
             documentService.GetDocuments($routeParams.dayCareId).then(function (data) {
                 $scope.docs = data;
+                if (!$scope.docs)
+                    $scope.warning = "No documents exist.";
             },
                 function (error) {
                     $scope.error = error;
@@ -1424,6 +1427,7 @@ app.controller('aboutController', ['$scope',
     $scope.scheduleName = '';
     $scope.times = schedulesService.times;
     $scope.kids = {};
+    $scope.role = localStorageService.get('userRole');
     this.onLoad = function () {
         schedulesService.GetSchedules($routeParams.dayCareId).then(function (data) {
             if (data != null)
@@ -1436,7 +1440,7 @@ app.controller('aboutController', ['$scope',
         });
     };
     this.getKids = function () {
-        reportsService.GetKids($routeParams.dayCareId, localStorageService.get('userRole')).then(function (data) {
+        reportsService.GetKids($routeParams.dayCareId, $scope.role).then(function (data) {
             $scope.kids = data;
             if ($scope.kids == null)
                 $scope.warning = 'No Kids found in your day care. Go to kids section to add kids';

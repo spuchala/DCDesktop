@@ -944,6 +944,19 @@ namespace DayCareWebAPI.Repository
             return null;
         }
 
+        public Guid? GetParentsDayCare(Guid parentId)
+        {
+            const string sp = "GetParentsDayCare";
+            var cmd = CreateCommand(_conn, CommandType.StoredProcedure, sp);
+            cmd.Parameters.AddWithValue("@ParentId", parentId);
+            ExecuteReader(cmd);
+            if (_ds != null && _ds.Tables.Count > 0 && _ds.Tables[0].Rows.Count > 0)
+            {
+                return new Guid(_ds.Tables[0].Rows[0]["DayCareId"].ToString());
+            }
+            return null;
+        }
+
         public Parent CheckParentByEmail(string email)
         {
             const string sp = "CheckParentByEmail";

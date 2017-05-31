@@ -4,7 +4,7 @@
     <div class="col-md-8 serviceDiv" style="float: none;margin: 0 auto;">
         <div data-ng-hide="hideSchedule">
             <br />
-            <button class="btn btn-primary icon-save" style="float: left" data-ng-click="heading='Adding Schedule';addSchedule=true">
+            <button class="btn btn-primary icon-save" style="float: left" data-ng-hide="role==='parent'" data-ng-click="heading='Adding Schedule';addSchedule=true">
                 + Add Schedule
             </button>
             <br />
@@ -42,10 +42,10 @@
                             <a href="#" style="text-decoration:none" ng-attr-title="Share" data-ng-click="showCopy=!showCopy">
                                 <i class="fa fa-share-square-o" style="font-size:24px;color:green;"></i>
                             </a>&nbsp;&nbsp;&nbsp;
-                            <a href="#" style="text-decoration:none" ng-attr-title="Email" data-ng-click="showKids=!showKids;sCntrl.getKids()">
+                            <a href="#" style="text-decoration:none" ng-attr-title="Email" data-ng-hide="role==='parent'" data-ng-click="showKids=!showKids;sCntrl.getKids()">
                                 <i class="fa fa-envelope-o" style="font-size:24px;"></i>
                             </a>&nbsp;&nbsp;&nbsp;
-                            <a href="#" style="text-decoration:none" ng-attr-title="Delete" data-ng-click="removeSchedule(schedule.Id);">
+                            <a href="#" style="text-decoration:none" ng-attr-title="Delete" data-ng-hide="role==='parent'" data-ng-click="removeSchedule(schedule.Id);">
                                 <i class="fa fa-trash-o" style="font-size:24px;color:red;"></i>
                             </a>
                             <br />
@@ -86,10 +86,10 @@
                         <div class="list-group">
                             <div class="list-group-item" style="background-color:#d9edf7" data-ng-repeat="message in schedule.Messages">
                                 <span class="robotoNoStyle">{{message.Time}}&nbsp;{{message.Message}}</span>
-                                <a href="#" style="text-decoration:none" ng-attr-title="Edit" data-ng-click="sCntrl.editScheduleSlot(message);edit=true;">
+                                <a href="#" style="text-decoration:none" ng-attr-title="Edit" data-ng-hide="role==='parent'" data-ng-click="sCntrl.editScheduleSlot(message);edit=true;">
                                     <i class="fa fa-pencil" style="font-size:20px;color:orange;"></i>
                                 </a>
-                                <a href="#" style="text-decoration:none" ng-attr-title="Delete" data-ng-click="sCntrl.removeScheduleMessage(schedule,message.MessageId)">
+                                <a href="#" style="text-decoration:none" ng-attr-title="Delete" data-ng-hide="role==='parent'" data-ng-click="sCntrl.removeScheduleMessage(schedule,message.MessageId)">
                                     <i class="fa fa-trash" style="font-size:20px;color:red;"></i>
                                 </a>
                                 <span data-ng-show="edit"><br /><br /></span>

@@ -61,9 +61,9 @@
                     <li data-ng-hide="!authentication.isAuth"><a data-ng-href="instantLog/{{authentication.userId}}">Instant Log</a></li>
                     <li data-ng-hide="!authentication.isAuth || authentication.userRole=='parent'"><a data-ng-href="attendance/{{authentication.userId}}">Attendance</a></li>
                     <li data-ng-hide="!authentication.isAuth || authentication.userRole=='parent'"><a data-ng-href="settings/{{authentication.userId}}">Settings</a></li>
-                    <li data-ng-hide="!authentication.isAuth || authentication.userRole=='parent'"><a data-ng-href="documents/{{authentication.userId}}">Documents</a></li>
+                    <li data-ng-hide="!authentication.isAuth"><a data-ng-href="documents/{{authentication.userId}}">Documents</a></li>
                     <li data-ng-hide="!authentication.isAuth || authentication.userRole=='parent' || nots==0"><a data-ng-href="notifications/{{authentication.userId}}"><div id="noti_Container"><span class="fa fa-bell-o fa-4"></span><div class="noti_bubble">{{nots}}</div></div></a></li>
-                    <li data-ng-hide="!authentication.isAuth || authentication.userRole=='parent'"><a data-ng-href="schedules/{{authentication.userId}}">Schedules</a></li>
+                    <li data-ng-hide="!authentication.isAuth"><a data-ng-href="schedules/{{authentication.userId}}">Schedules</a></li>
                     <li data-ng-hide="!authentication.isAuth" class="dropdown" data-ng-class="{ open : dd1 }" data-ng-init="dd1 = false" data-ng-click="dd1 = !dd1">
                         <a aria-expanded="false" role="button" data-toggle="dropdown" class="dropdown-toggle"
                            href="">{{ authentication.userName }}<span class="caret"></span></a>
@@ -86,7 +86,7 @@
     <script src="scripts/angular-datepicker.js?7.1"></script>
     <script src="scripts/textAngular-rangy.min.js?7.1"></script>
     <script src="scripts/textAngular-sanitize.min.js?7.1"></script>
-    <script src="scripts/textAngular.min.js?7.1"></script>    
+    <script src="scripts/textAngular.min.js?7.1"></script>
     <!-- Load app main script -->
     <script src="app.js?7.1"></script>
     <!-- Load services -->

@@ -1555,7 +1555,7 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-Alter PROCEDURE [dbo].[GetNotifications] (@DayCareId uniqueidentifier)
+Create PROCEDURE [dbo].[GetNotifications] (@DayCareId uniqueidentifier)
 AS
 BEGIN	
 	SET NOCOUNT ON; 		
@@ -1631,7 +1631,7 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-alter PROCEDURE [dbo].[GetKidByName] (@DayCareId uniqueidentifier, @Name nvarchar(200))
+create PROCEDURE [dbo].[GetKidByName] (@DayCareId uniqueidentifier, @Name nvarchar(200))
 AS
 BEGIN	
 	SET NOCOUNT ON; 	
@@ -1761,7 +1761,7 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-alter PROCEDURE [dbo].[LogAlexaSession] (@DayCareId uniqueidentifier,
+create PROCEDURE [dbo].[LogAlexaSession] (@DayCareId uniqueidentifier,
 @RequestId varchar(1000),@SessionId varchar(1000),@RequestType varchar(200),@Intent varchar(max))
 AS
 BEGIN	
@@ -1795,7 +1795,7 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-alter PROCEDURE [dbo].[InsertKidShort] (@Name NVARCHAR(100),@DayCareId uniqueidentifier,@ClassId uniqueidentifier=null)
+create PROCEDURE [dbo].[InsertKidShort] (@Name NVARCHAR(100),@DayCareId uniqueidentifier,@ClassId uniqueidentifier=null)
 AS
 BEGIN	
 	SET NOCOUNT ON; 	
@@ -2185,7 +2185,7 @@ END
 
 --insert ads for whatsnew
 insert into LU_WhatsNew values(1,'Alexa','get alexa now and use your voice to rock','https://gigglesware.com/images/Assistant-Small.png',GETDATE());
-insert into LU_WhatsNew values(2,'google home','get google home now and use your voice to rock','https://gigglesware.com/images/Assistant-Small.png'
+insert into LU_WhatsNew values(2,'google home','get google home now and use your voice to rock','https://gigglesware.com/images/Assistant-Small.png',GETDATE())
 
 --change the get daycare to handle 0 kids
 SET ANSI_NULLS ON
@@ -2657,7 +2657,7 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-ALTER PROCEDURE [dbo].[InsertDocument] (@DayCareId uniqueidentifier,@Name nvarchar(500),@Title nvarchar(500),
+Create PROCEDURE [dbo].[InsertDocument] (@DayCareId uniqueidentifier,@Name nvarchar(500),@Title nvarchar(500),
 @Type nvarchar(20),@MimeType varchar(1000))
 AS
 BEGIN	
@@ -2854,6 +2854,9 @@ BEGIN
 	 End 
 END
 
+--add active column to lu_whats new
+alter table lu_whatsnew add Active bit not null default 1
+
 --get all of the whats new
 GO
 SET ANSI_NULLS ON
@@ -2865,9 +2868,6 @@ AS
 BEGIN	
 	select * from lu_whatsnew where active=1;
 END
-
---add active column to lu_whats new
-alter table lu_whatsnew add Active bit not null default 1
 
 --get day care images
 GO

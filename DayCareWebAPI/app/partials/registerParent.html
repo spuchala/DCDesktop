@@ -22,7 +22,7 @@
                 {{ success }}
             </div>
             <form name="signUpForm" novalidate="" class="form-group">
-                <h1 class="hero-heading">To begin Register as a parent with us</h1>
+                <h1 class="hero-heading-black">To begin Register as a parent with us</h1>
                 <div class="input-group">
                     <input type="text" class="form-control" maxlength="50" data-ng-model="parent.FName" required placeholder="F Name(required)" />
                     <span class="input-group-addon">-</span>
@@ -32,7 +32,7 @@
                 <input class="form-control" type="tel"
                        placeholder="Phone(required)" maxlength="20" data-ng-model="parent.Phone" required />
                 <br />
-                <input class="form-control" type="email"
+                <input class="form-control" type="email" disabled="disabled"
                        placeholder="Email(required)" data-ng-model="parent.Email" required />
                 <br />
                 <input class="form-control" type="password"

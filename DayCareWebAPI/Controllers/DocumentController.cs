@@ -24,7 +24,7 @@ namespace DayCareWebAPI.Controllers
         }
 
         // GET all documents
-        [Authorize(Roles = Constants.DayCareRole)]
+        [Authorize]
         public IHttpActionResult Get(Guid id)
         {
             var docs = _rep.GetDocuments(id);

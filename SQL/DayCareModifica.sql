@@ -1,11 +1,57 @@
---use daycare
+--use DC
 
-insert into LU_WhatsNew values(1,'Alexa now supports GigglesWare','Enable GigglesWare skill on Alexa and log kids activities with commands and ask Alexa for kids reports','https://gigglesware.com/images/Alexa-Small.png',GETDATE());
+--support day care name for schedules
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER PROCEDURE [dbo].[InsertSchedule] (@DayCareId uniqueidentifier,@Name varchar(200),@Message nvarchar(max),@Time varchar(max))
+AS
+BEGIN	
+	SET NOCOUNT ON;		
+	DECLARE @Messages TABLE (idx INT,record varchar(2000));
+	DECLARE @Times TABLE (idx INT,record varchar(20));
+	DECLARE @MyTempTable table (MyTempId int);	
+	Declare @ScheduleId int;
+	Declare @UniqueName varchar(220);
+	Set @UniqueName = @Name;
+	Declare @Counter int; set @counter=2;
+	While(EXISTS (SELECT * FROM dbo.Schedule WHERE Name=@UniqueName))
+	  Begin
+	    set @UniqueName=@Name+CAST(@Counter as nvarchar(20));
+		set @counter=@counter+1;
+	  End
+	Insert into dbo.Schedule(Name,DayCareId,DateCreated,UniqueName)OUTPUT inserted.ScheduleId INTO @MyTempTable
+	values(@Name,@DayCareId,GETDATE(),@UniqueName);
+	select @ScheduleId = MyTempId from @MyTempTable;
+	insert into @Messages(idx,record) select idx,record from _BuildTable(@Message,'^');	
+	insert into @Times(idx,record) select idx,record from _BuildTable(@Time,'^');
+	insert into dbo.ScheduleMessages(ScheduleId,Time,Message,DateCreated) 
+	select @ScheduleId,a.record,b.record,GETDATE() from @Times a join @Messages b on a.idx=b.idx;
+	select @DayCareId as DayCareId,d.DayCareName,s.Name,s.ScheduleId,m.MessageId,m.Time,m.Message from DayCare d Join dbo.Schedule s on d.DayCareId=s.DayCareId Join dbo.ScheduleMessages m
+	on s.ScheduleId=m.ScheduleId where d.DayCareId=@DayCareId and s.ScheduleId=@ScheduleId;
+END
 
-
+--get parent's daycareid
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+Create PROCEDURE [dbo].[GetParentsDayCare] (@ParentId uniqueidentifier)
+AS
+BEGIN	
+	SET NOCOUNT ON; 	
+	DECLARE @Temp TABLE (idx INT,record int);
+	declare @KidIds nvarchar(4000);
+	select @KidIds=KidId from dbo.Parent where ParentId=@ParentId;
+	insert into @Temp(idx,record) select idx,record from _BuildTable(@KidIds,',');
+	select top 1 k.DayCareId from dbo.kid k join @Temp t on t.idx=k.kidId;
+END
 
 --*****************************************************************
 --working tets data
+
+insert into LU_WhatsNew values(1,'Alexa now supports GigglesWare','Enable GigglesWare skill on Alexa and log kids activities with commands and ask Alexa for kids reports','https://gigglesware.com/images/Alexa-Small.png',GETDATE());
 
 delete from LU_WhatsNew
 

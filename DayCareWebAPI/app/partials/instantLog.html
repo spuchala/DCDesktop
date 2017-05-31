@@ -13,7 +13,7 @@
             {{ success }}
         </div>
         <br />
-        <div class="panel panel-default" data-ng-hide="warning">
+        <div data-ng-hide="warning">
             <div class="panel-heading">
                 <div class="input-group">
                     <div class="dropdown" data-ng-class="{ open : dd1 }" data-ng-init="dd1 = false" data-ng-click="dd1 = !dd1">
@@ -45,7 +45,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="panel-body" style="background-color:lightgray">
+                            <div class="panel-body" data-ng-if="messages.length>0" style="background-color:lightgray">
                                 <div class="input-group input-group-lg" data-ng-repeat="msg in messages">
                                     <span class="input-group-addon">
                                         <span data-ng-class="{'fa fa-cutlery fa-2': msg.Type == 'Food' , 'fa fa-bed fa-2': msg.Type == 'Nap', 'fa fa-odnoklassniki fa-2': msg.Type == 'Potty', 'fa fa-futbol-o fa-2': msg.Type == 'Activity','fa fa-smile-o fa-2': msg.Type == 'Mood','fa fa-ambulance fa-2': msg.Type == 'Sick','fa fa-comment fa-2': msg.Type == 'Misc'}"></span>

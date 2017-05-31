@@ -2,6 +2,12 @@
     <br />
     <h1 style="text-align: center" class="hero-heading-s">Documents</h1>
     <div class="col-md-8 serviceDiv" style="float: none;margin: 0 auto;">
+        <br />
+        <button class="btn btn-primary icon-save" style="float: left" data-ng-hide="role==='parent'" data-ng-click="showUploadDoc=true">
+            + Add Document
+        </button>
+        <br />
+        <br />
         <div data-ng-show="warning" class="alert alert-info alert-dismissable">
             <button type="button" class="close" data-ng-click="warning=false"
                     aria-hidden="true">
@@ -23,12 +29,6 @@
             </button>
             {{ success }}
         </div>
-        <br />
-        <button class="btn btn-primary icon-save" style="float: left" data-ng-click="showUploadDoc=true">
-            + Add Document
-        </button>
-        <br />
-        <br />
         <div data-ng-hide="!showUploadDoc" class="animate-shiny">
             <div data-ng-show="errorInModal" class="alert alert-danger">
                 {{ errorInModal }}
@@ -73,7 +73,7 @@
                     <a href="#" style="text-decoration:none" ng-attr-title="Email" data-ng-click="showKids=!showKids;doc.getKids()">
                         <i class="fa fa-envelope-o" style="font-size:24px;"></i>
                     </a>&nbsp;&nbsp;&nbsp;
-                    <a href="#" style="text-decoration:none" ng-attr-title="Delete" data-ng-click="doc.remove(docu.Id);">
+                    <a href="#" style="text-decoration:none" ng-attr-title="Delete" data-ng-hide="role==='parent'" data-ng-click="doc.remove(docu.Id);">
                         <i class="fa fa-trash-o" style="font-size:24px;color:red;"></i>
                     </a>
                     <br />

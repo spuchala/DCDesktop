@@ -183,3 +183,8 @@ app.config(function ($httpProvider) {
 app.run(['authService', function (authService) {
     authService.FillAuthData();
 }]);
+
+app.config(function (localStorageServiceProvider) {
+    localStorageServiceProvider
+      .setStorageType('sessionStorage');
+});

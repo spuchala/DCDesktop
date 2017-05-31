@@ -193,6 +193,11 @@ namespace DayCareWebAPI.Services
             return parent;
         }
 
+        public Guid? GetParentsDayCare(Guid parentId)
+        {
+            return _repo.GetParentsDayCare(parentId);
+        }
+
         public Parent CheckParentByEmail(string email)
         {
             return _repo.CheckParentByEmail(email);
@@ -232,8 +237,12 @@ namespace DayCareWebAPI.Services
         {
             var returnKid = _repo.InsertKid(kid);
             //email parent
-            if (returnKid.Error != string.Empty)
-                EmailParent(kid);
+            if (string.IsNullOrEmpty(returnKid.Error))
+            {
+                var settings = _repo.GetSettings(kid.DayCareId);
+                if (settings != null && settings.EmailOnRegisterKid)
+                    EmailParent(kid);
+            }
             return returnKid;
         }
 
@@ -593,7 +602,7 @@ namespace DayCareWebAPI.Services
         public DayCare InsertDayCare(DayCare dayCare)
         {
             var dc = _repo.InsertDayCare(dayCare);
-            if (dc.Error == string.Empty)
+            if (string.IsNullOrEmpty(dc.Error))
                 EmailDayCareWelcome(dc);
             return dc;
         }
